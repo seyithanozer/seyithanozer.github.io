@@ -1,0 +1,90 @@
+/* and */
+/*fonts styling */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital@0;1&display=swap');
+
+html {
+    color: black;
+    font-family: 'DM Sans', sans-serif;
+}
+
+h1 {
+    font-size: 18pt;
+    text-align: left;
+  }
+  
+p, li, ul {
+    font-size: 10pt;
+    line-height: 1.5;
+  }
+
+ul {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+/*link styling */
+a {
+  color: black;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  text-decoration: underline;
+}
+
+/*background, padding */
+body {
+  width: 50vw;
+  margin-left: 10vw;
+  margin-top: 10px;
+  background-color: #f4f1e8;
+}
+
+.header {
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-bottom: 10px;
+  margin-top: 0px;
+  text-align: left;
+  color: black;
+  font-size: 20px;
+}
+
+/* Styles for collapsible list */
+	
+  .plus-collapsible li > input ~ * {
+    display: none;
+  }
+
+  .plus-collapsible li > input:checked ~ * {
+    display: block;
+  }
+
+  .plus-collapsible li > input {
+    display: none;
+  }
+
+  .plus-collapsible label {
+    cursor: pointer;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  u{
+    font-size: 8pt;
+    line-height: 2;
+    text-decoration-line: none;
+    font-weight: bold;
+  }
+	/* Styles for collapsible list */
