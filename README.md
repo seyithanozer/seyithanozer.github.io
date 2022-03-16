@@ -1,0 +1,1 @@
+# seyithanozer.github.io
