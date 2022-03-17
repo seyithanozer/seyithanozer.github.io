@@ -61,7 +61,7 @@ a:active {
   body {
     width: 80vw;
     margin-left: 10vw;
-    margin-top: 10px;
+    margin-top: 5vh;
     background-color: #f4f1e8;
   }
 
@@ -73,7 +73,7 @@ a:active {
   body {
     width: 50vw;
     margin-left: 10vw;
-    margin-top: 10px;
+    margin-top: 10vh;
     background-color: #f4f1e8;
   }
 
