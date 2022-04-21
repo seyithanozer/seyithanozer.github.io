@@ -32,11 +32,9 @@ h6 {
 p, li, ul, u {
     font-size: 1rem;
     line-height: 1.5;
+    font-weight: normal;
   }
 
-.listref:hover {
-  font-weight: 900;
-}
 
 ul {
     text-decoration: none;
@@ -48,6 +46,7 @@ ul {
 /*link styling */
 a {
   color: black;
+
 }
 a:link {
   text-decoration: none;
@@ -59,8 +58,21 @@ a:hover {
   text-decoration: underline;
 }
 a:active {
-  text-decoration: underline;
+  text-decoration: none;
 }
+
+/*hovers */
+.ppub:hover {
+  font-weight: 900;
+}
+
+.pconf{
+  color: grey;
+}
+.pconf:hover {
+  font-weight: 900;
+}
+
 
 /*background, padding */
 
@@ -116,10 +128,5 @@ a:active {
 
   input[type="checkbox"] {
     display: none;
-  }
-
-  u{
-    text-decoration-line: none;
-    font-weight: bold;
   }
 	/* Styles for collapsible list */
