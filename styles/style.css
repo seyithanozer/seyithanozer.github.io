@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;700&family=Inter:wght@500&display=swap');
 
 html {
+    vertical-align: top;
     color: black;
     font-family: "Source Serif Pro", serif;
 }
@@ -73,6 +74,16 @@ a:active {
   font-weight: 900;
 }
 
+/*Syllabi */
+.sref{
+  font-size: 0.75rem;
+}
+
+.columned{
+  column-count: 2;
+  column-gap: 0.1vw;
+  column-rule-style: none;
+}
 
 /*background, padding */
 
