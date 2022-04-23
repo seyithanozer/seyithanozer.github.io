@@ -148,7 +148,6 @@ input[type="checkbox"] {
 .outer-container {
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 100%));
   overflow: visible;
 }
 
