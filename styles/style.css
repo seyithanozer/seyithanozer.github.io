@@ -106,7 +106,7 @@ a:active {
 
 /* Content Styles */
 
-/* Publications */
+
 
 .ppub:hover {
   font-weight: 900;
@@ -119,8 +119,6 @@ a:active {
 .pdesc{
   padding-left: 5vw;
 }
-
-/* Others */
 
 .pconf{
   color: #a38c7b;
@@ -138,7 +136,13 @@ a:active {
   font-weight: 900;
 }
 
+.psyl{
+  color: #B68740;
+}
 
+.psyl:hover {
+  font-weight: 900;
+}
 
 /* Collapsibles */
 
