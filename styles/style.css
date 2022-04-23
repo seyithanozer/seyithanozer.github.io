@@ -2,10 +2,39 @@
 /*fonts styling */
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;700&family=Inter:wght@500&display=swap');
 
+/*background, padding */
+
+@media (min-width: 320px) and (max-width: 999px) {
+
+  /* Mobile and tablet CSS */
+  body {
+    height: 100%;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-top: 5vh;
+    background-color: #f4f1e8;
+  }
+}
+
+@media (min-width: 1000px) {
+
+  /* Laptop */
+  body {
+    width: 75vw;
+    margin-left: 10vw;
+    margin-top: 5vh;
+    background-color: #f4f1e8;
+  }
+}
+
+/*fonts etc. */
+
+
 html {
     vertical-align: top;
     color: black;
     font-family: "Source Serif Pro", serif;
+    height: 100%;
 }
 
 h1 {
@@ -44,6 +73,16 @@ ul {
     padding: 0;
   }
 
+.header {
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-bottom: 10px;
+  margin-top: 0px;
+  text-align: left;
+  color: black;
+  font-size: 20px;
+}
+
 /*link styling */
 a {
   color: black;
@@ -62,82 +101,64 @@ a:active {
   text-decoration: none;
 }
 
-/*hovers */
+/* Content Styles */
+
+/* Publications */
+
 .ppub:hover {
   font-weight: 900;
 }
 
+.pref{
+  font-size: 0.75rem;
+}
+
+.pdesc{
+  padding-left: 5vh;
+}
+
+/* Others */
+
 .pconf{
   color: grey;
 }
+
 .pconf:hover {
   font-weight: 900;
 }
 
-/*Syllabi */
-.sref{
-  font-size: 0.75rem;
+
+/* Collapsibles */
+
+input[type="checkbox"] {
+  display: none;
 }
 
-.columned{
-  column-count: 2;
-  column-gap: 0.1vw;
-  column-rule-style: none;
+.outer-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 100%));
+  overflow: visible;
 }
 
-/*background, padding */
-
-@media (min-width: 320px) and (max-width: 999px) {
-
-  /* Mobile and tablet CSS */
-  body {
-    width: 80vw;
-    margin-left: 10vw;
-    margin-top: 5vh;
-    background-color: #f4f1e8;
-  }
+.container-content{
+  overflow: auto;
+  display: none;
 }
 
-@media (min-width: 1000px) {
-
-  /* Laptop */
-  body {
-    width: 50vw;
-    margin-left: 10vw;
-    margin-top: 5vh;
-    background-color: #f4f1e8;
-  }
+#ct1:checked + .container-content {
+  display:block;
+  width: 100%; 
 }
 
-.header {
-  padding-top: 0px;
-  padding-left: 0px;
-  padding-bottom: 10px;
-  margin-top: 0px;
-  text-align: left;
-  color: black;
-  font-size: 20px;
+#ct2:checked + .container-content {
+  display:block;
+  width: 100%; 
 }
 
-/* Styles for collapsible list */
-	
-  .plus-collapsible li > input ~ * {
-    display: none;
-  }
+#ctplus:checked + .container-content {
+  display:block;
+  width: 100%; 
+}
 
-  .plus-collapsible li > input:checked ~ * {
-    display: block;
-  }
 
-  .plus-collapsible li > input {
-    display: none;
-  }
-
-  .plus-collapsible label {
-    cursor: pointer;
-  }
-
-  input[type="checkbox"] {
-    display: none;
-  }
-	/* Styles for collapsible list */
