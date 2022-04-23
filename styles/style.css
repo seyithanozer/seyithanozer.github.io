@@ -4,7 +4,7 @@
 
 /*background, padding */
 
-@media (min-width: 320px) and (max-width: 999px) {
+@media (min-width: 320px) and (max-width: 899px) {
 
   /* Mobile and tablet CSS */
   body {
@@ -16,11 +16,22 @@
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) and (max-width: 1100px) {
 
   /* Laptop */
   body {
     width: 75vw;
+    margin-left: 10vw;
+    margin-top: 5vh;
+    background-color: #f4f1e8;
+  }
+}
+
+@media (min-width: 1100px) {
+
+  /* Laptop */
+  body {
+    width: 55vw;
     margin-left: 10vw;
     margin-top: 5vh;
     background-color: #f4f1e8;
