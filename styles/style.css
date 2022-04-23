@@ -4,37 +4,29 @@
 
 /*background, padding */
 
-@media (min-width: 320px) and (max-width: 899px) {
+body {
+  height: 100%;
+  background-color: #EFEBE8;
+  margin-left: 10vw;
+  margin-top: 5vh;
 
-  /* Mobile and tablet CSS */
+}
+
+@media (min-width: 320px) and (max-width: 899px) {
   body {
-    height: 100%;
     width: 80vw;
-    margin-left: 10vw;
-    margin-top: 5vh;
-    background-color: #f4f1e8;
   }
 }
 
 @media (min-width: 900px) and (max-width: 1100px) {
-
-  /* Laptop */
   body {
     width: 75vw;
-    margin-left: 10vw;
-    margin-top: 5vh;
-    background-color: #f4f1e8;
   }
 }
 
 @media (min-width: 1100px) {
-
-  /* Laptop */
   body {
-    width: 55vw;
-    margin-left: 10vw;
-    margin-top: 5vh;
-    background-color: #f4f1e8;
+    width: 50vw;
   }
 }
 
@@ -43,7 +35,7 @@
 
 html {
     vertical-align: top;
-    color: black;
+    color: #333333;
     font-family: "Source Serif Pro", serif;
     height: 100%;
 }
@@ -97,7 +89,7 @@ ul {
 
 /*link styling */
 a {
-  color: black;
+  color: #333333;
 
 }
 a:link {
@@ -126,18 +118,27 @@ a:active {
 }
 
 .pdesc{
-  padding-left: 5vh;
+  padding-left: 5vw;
 }
 
 /* Others */
 
 .pconf{
-  color: grey;
+  color: #a38c7b;
 }
 
 .pconf:hover {
   font-weight: 900;
 }
+
+.pphd{
+  color: #AB7B75;
+}
+
+.pphd:hover {
+  font-weight: 900;
+}
+
 
 
 /* Collapsibles */
