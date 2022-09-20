@@ -1,6 +1,6 @@
 /* and */
 /*fonts styling */
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;700&family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@400;500&display=swap');
 
 /*background, padding */
 
@@ -64,6 +64,7 @@ h6 {
   }
   
 p, li, ul, u {
+    font-family: 'Bitter', serif;
     font-size: 1rem;
     line-height: 1.5;
     font-weight: normal;
@@ -89,6 +90,7 @@ ul {
 /*link styling */
 a {
   color: #333333;
+  font-weight: 500;
 
 }
 a:link {
@@ -107,9 +109,12 @@ a:active {
 /* Content Styles */
 
 
+.ppub {
+  font-weight: 500;
+}
 
 .ppub:hover {
-  font-weight: 500;
+  text-decoration: underline;
 }
 
 .pref{
