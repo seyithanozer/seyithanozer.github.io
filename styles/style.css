@@ -70,7 +70,7 @@ h6 {
     font-weight: normal;
   }
   
-p, li, ul, u, {
+p, li, ul, u {
     font-family: 'Inter',Helvetica,sans-serif;
     font-size: 1rem;
     line-height: 1.5;
