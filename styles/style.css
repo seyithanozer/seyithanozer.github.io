@@ -1,12 +1,21 @@
 /* and */
 /*fonts styling */
-@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 /*background, padding */
 
+* {
+  margin:0;
+  padding:0;
+  }
+
+
+
 body {
   height: 100%;
-  background-color: #EFEBE8;
+  background-color: #f0efed;
   margin-left: 2vw;
   margin-top: 5vh;
 
@@ -35,13 +44,12 @@ body {
 
 html {
     vertical-align: top;
-    color: #333333;
-    font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    color: #333333;;
+    font-family: 'Inter',Helvetica,sans-serif;
     height: 100%;
 }
 
 h1 {
-    /* font-family: "Inter", sans-serif; */
     font-size: 1rem;
     line-height: 1.2;
     font-weight: 600;
@@ -50,7 +58,6 @@ h1 {
   }
 
 h4 {
-    /* font-family: "Inter", sans-serif; */
     font-size: 0.9rem;
     font-weight: 600;
     text-align: left;
@@ -63,12 +70,16 @@ h6 {
     font-weight: normal;
   }
   
-p, li, ul, u {
-    font-family: 'Bitter', serif;
+p, li, ul, u, {
+    font-family: 'Inter',Helvetica,sans-serif;
     font-size: 1rem;
     line-height: 1.5;
     font-weight: normal;
   }
+
+sup {
+  font-size: 0.6rem;
+}
 
 
 ul {
@@ -81,18 +92,17 @@ ul {
 .header {
   padding-top: 0px;
   padding-left: 0px;
-  padding-bottom: 2vh;
+  padding-bottom: 3vh;
   margin-top: 0px;
   text-align: left;
-  color: black;
+  color: #1f2022;;
 }
 
 /*link styling */
 a {
-  color: #333333;
-  font-weight: 500;
-
+  color: #1f2022;;
 }
+
 a:link {
   text-decoration: none;
 }
@@ -100,85 +110,75 @@ a:visited {
   text-decoration: none;
 }
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:active {
   text-decoration: none;
 }
 
 /* Content Styles */
-
-
-.ppub {
-  font-weight: 500;
+hr{
+  border: 1px solid black;
 }
-
-.ppub:hover {
-  text-decoration: underline;
+.section-title{
+  font-size:small;
+  font-weight: bold;
+  font-family:'Inter',Helvetica,sans-serif;
+  padding-bottom: 3vh;
 }
-
-.pref{
+.plussign{
+  font-weight:900;
+  color:black;
+}
+.subtext{
+  font-size: small;
+}
+.ppub .pref{
   font-size: 0.75rem;
+}
+.ppub:hover, .pconf:hover, .pphd:hover {
+  color: black;
+}
+
+.ppub:hover > span, .ppub:hover > a > span {
+  color:#e14013;
+}
+
+a:hover > span {
+  font-weight: 900;
+  color:#e14013;
+  transform: scale(.5, 1);
 }
 
 .pdesc{
+  padding-top: 2vh;
   padding-left: 2vw;
+  color:#333333;
+  font-family: 'Bitter', serif;
 }
-
 .pconf{
   color: #a38c7b;
 }
 
-.pconf:hover {
-  font-weight: 900;
-}
-
-.pphd{
-  color: #AB7B75;
-}
-
-.pphd:hover {
-  font-weight: 900;
-}
-
-.psyl{
-  color: #B68740;
-}
-
-.psyl:hover {
-  font-weight: 900;
-}
-
 /* Collapsibles */
-
 input[type="checkbox"] {
   display: none;
 }
-
 .outer-container {
   display: grid;
   width: 100%;
   overflow: visible;
+  padding-bottom: 5vh;
 }
-
 .container-content{
   overflow: auto;
   display: none;
 }
-
-#ct1:checked + .container-content {
+#ct1:checked + .container-content, 
+#ct2:checked + .container-content, 
+#ct3:checked + .container-content,
+#ct4:checked + .container-content,
+#ct5:checked + .container-content {
   display:block;
   width: 100%; 
 }
-
-#ct2:checked + .container-content {
-  display:block;
-  width: 100%; 
-}
-
-#ctplus:checked + .container-content {
-  display:block;
-  width: 100%; 
-}
-
-
