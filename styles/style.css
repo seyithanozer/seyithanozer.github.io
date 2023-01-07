@@ -18,18 +18,23 @@ body {
   background-color: #f0efed;
   margin-left: 2vw;
   margin-top: 5vh;
-
 }
 
 @media (min-width: 320px) and (max-width: 899px) {
   body {
-    width: 90vw;
+    width: 95vw;
+  }
+  html {
+    font-size:larger;
   }
 }
 
 @media (min-width: 900px) and (max-width: 1100px) {
   body {
-    width: 60vw;
+    width: 85vw;
+  }
+  html {
+    font-size:larger;
   }
 }
 
