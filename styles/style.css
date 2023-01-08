@@ -209,6 +209,11 @@ input[type="checkbox"] {
   width: 100%; 
 }
 
+#ct0:not(:checked) + .container-content {
+  display: none;
+
+}
+
 /* Sidenotes */
 .endnote-main {
   font-size: 90%;
