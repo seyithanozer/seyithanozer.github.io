@@ -212,7 +212,6 @@ input[type="checkbox"] {
   font-size: 90%;
   padding-bottom: 3vh;
 }
-
 body {
   counter-reset: sidenote-counter;
 }
