@@ -173,6 +173,9 @@ hr{
 .ptext{
   padding-bottom: 2vh;
 }
+.quote{
+  padding-left: 3vh;
+}
 .pcite:hover > a, .ppub:hover > span, .ppub:hover > a > span {
   color:#e14013;
 }
