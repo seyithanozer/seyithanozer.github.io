@@ -140,6 +140,7 @@ hr{
   border: 1px solid black;
 }
 .section-title{
+  color: black;
   font-size:small;
   font-weight: bold;
   font-family:'Inter',Helvetica,sans-serif;
@@ -183,6 +184,9 @@ hr{
 .ppage:hover > a > span {
   color:#e14013;
 }
+.right{
+  text-align: right;
+}
 
 /* Collapsibles */
 input[type="checkbox"] {
@@ -217,6 +221,7 @@ input[type="checkbox"] {
 /* Sidenotes */
 .endnote-main {
   font-size: 80%;
+  padding-top: 0vh;
   padding-bottom: 3vh;
 }
 body {
@@ -250,4 +255,21 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+/* Read Bar */
+#read-bar {
+  margin: none;
+  padding: none;
+  position: fixed;
+  bottom: 99vh;
+  width: 100vw;
+  height: 1vh;
+  background-color: #f0efed;
+}
+
+#read-bar-fill {
+  height: 100%;
+  width: 0;
+  background-color: black;
 }
