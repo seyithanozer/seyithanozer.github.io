@@ -176,11 +176,11 @@ hr{
 .quote{
   padding-left: 3vh;
 }
-.pcite:hover > a, .ppub:hover > span, .ppub:hover > a > span {
-  color:#e14013;
-}
-a:hover > span {
-  font-weight: 900;
+.pcite:hover > a > span, 
+.ppub:hover > span, 
+.ppub:hover > a > span,
+.section-title:hover > span, 
+.ppage:hover > a > span {
   color:#e14013;
 }
 
@@ -216,7 +216,7 @@ input[type="checkbox"] {
 
 /* Sidenotes */
 .endnote-main {
-  font-size: 90%;
+  font-size: 80%;
   padding-bottom: 3vh;
 }
 body {
@@ -242,4 +242,12 @@ body {
 
 .sidenote-number:hover, .sidenote-number:hover > small, .sidenote-main:hover {
   color:#e14013;
+}
+
+.unselectable {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
