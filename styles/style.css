@@ -137,14 +137,16 @@ a:active {
 
 /* Content Styles */
 hr{
-  border: 1px solid black;
+  border: 0.5px solid black;
+  padding:none;
+  margin-top: 3vh;
 }
 .section-title{
   color: black;
   font-size:small;
   font-weight: bold;
   font-family:'Inter',Helvetica,sans-serif;
-  padding-bottom: 3vh;
+  padding-bottom: 2vh;
 }
 .plussign{
   font-weight:900;
@@ -186,6 +188,7 @@ hr{
 }
 .right{
   text-align: right;
+  padding-bottom: 1vh;
 }
 
 /* Collapsibles */
@@ -197,7 +200,8 @@ input[type="checkbox"] {
   display: grid;
   width: 100%;
   overflow: visible;
-  padding-bottom: 5vh;
+  padding-top: 2vh;
+  padding-bottom: 4vh;
 }
 .container-content{
   overflow: auto;
