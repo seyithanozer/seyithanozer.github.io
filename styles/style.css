@@ -235,7 +235,6 @@ input[type="checkbox"] {
 #ct-og2:not(:checked) + .container-content,
 #ct-og3:not(:checked) + .container-content{
   display:contents;
-
 }
 
 /* Sidenotes */
