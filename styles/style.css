@@ -150,6 +150,12 @@ a:active {
 }
 
 /* Content Styles */
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: 2vw 28vw 10vw;
+  grid-gap: 5vw;
+}
+
 hr{
   border: 0.5px solid black;
   padding:none;
@@ -162,6 +168,22 @@ hr{
   font-family:'Inter',Helvetica,sans-serif;
   padding-bottom: 2vh;
 }
+.title-year{
+  color: black;
+  font-size:small;
+  font-family:'Inter',Helvetica,sans-serif;
+  padding-bottom: 0vh;
+  padding-top: 2vh;
+}
+.ppub{
+  font-weight: bold;
+}
+.title-symbol{
+  color: black;
+  font-size:small;
+  font-weight: normal;
+  font-family:'Inter',Helvetica,sans-serif;
+}
 .plussign{
   font-weight:900;
   color:black;
@@ -169,16 +191,13 @@ hr{
 .pcite{
   font-size: 75%;
   padding-top: 1vh;
-  padding-left: 3vw;
   color:#505050;
   font-family: 'Bitter', serif;
 }
 .pdesc{
   font-size: 90%;
-  padding-top: 2vh;
-  padding-left: 3vw;
   color:#505050;
-  font-family: 'Bitter', serif;
+  font-family: 'Inter',Helvetica,sans-serif;
 }
 .ppage{
   font-size: 90%;
@@ -194,9 +213,10 @@ hr{
   padding-left: 3vh;
 }
 .pcite:hover > a > span, 
-.ppub:hover > span, 
-.ppub:hover > a > span,
-.section-title:hover > span, 
+/*.ppub:hover > span, 
+.ppub:hover > a > span,*/
+.section-title:hover > span,
+.plussign:hover, 
 .ppage:hover > a > span {
   color:#e14013;
 }
