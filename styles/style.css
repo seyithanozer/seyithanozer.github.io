@@ -189,13 +189,12 @@ hr{
   color:black;
 }
 .pcite{
-  font-size: 75%;
-  padding-top: 1vh;
+  font-size: 80%;
+  padding-top: 0.5vh;
   color:#505050;
-  font-family: 'Bitter', serif;
+  font-family: 'Inter',Helvetica,sans-serif;
 }
 .pdesc{
-  font-size: 90%;
   color:#505050;
   font-family: 'Inter',Helvetica,sans-serif;
 }
@@ -212,14 +211,18 @@ hr{
 .quote{
   padding-left: 3vh;
 }
-.pcite:hover > a > span, 
-/*.ppub:hover > span, 
-.ppub:hover > a > span,*/
+.pcite:hover > a > span,
 .section-title:hover > span,
 .plussign:hover, 
-.ppage:hover > a > span {
+.ppage:hover > a > span,
+.pcite> a:hover {
   color:#e14013;
 }
+
+.pcite> a{
+  text-decoration: underline;
+}
+
 .right{
   text-align: right;
   padding-bottom: 1vh;
@@ -286,7 +289,9 @@ body {
 
 
 
-.sidenote-number:hover, .sidenote-number:hover > small, .sidenote-main:hover {
+.sidenote-number:hover, 
+.sidenote-number:hover > small, 
+.sidenote-main:hover {
   color:#e14013;
 }
 
