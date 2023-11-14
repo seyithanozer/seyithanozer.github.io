@@ -215,7 +215,8 @@ hr{
 .section-title:hover > span,
 .plussign:hover, 
 .ppage:hover > a > span,
-.pcite> a:hover {
+.pcite> a:hover,
+.ppub> .title-symbol:hover {
   color:#e14013;
 }
 
