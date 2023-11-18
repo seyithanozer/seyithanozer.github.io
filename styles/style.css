@@ -194,6 +194,13 @@ hr{
   color:#505050;
   font-family: 'Inter',Helvetica,sans-serif;
 }
+.pcite-indented{
+  font-size: 80%;
+  padding-top: 0.5vh;
+  color:#505050;
+  font-family: 'Inter',Helvetica,sans-serif;
+  padding-left: 1vw;
+}
 .pdesc{
   color:#505050;
   font-family: 'Inter',Helvetica,sans-serif;
