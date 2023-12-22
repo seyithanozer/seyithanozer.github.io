@@ -23,7 +23,7 @@ body {
     width: 90vw;
   }
   html {
-    font-size:18px;
+    font-size:1rem;
   }
   .sidenote, .sidenote-main .figure-content{
     display: none;
@@ -82,34 +82,12 @@ html {
     height: 100%;
 }
 
-h1 {
-    font-size: 1rem;
-    line-height: 1.2;
-    font-weight: 600;
-    text-align: left;
-    padding-bottom: 5vh;
-  }
-h2 {
-    padding-bottom: 5vh;
-}
-  h3 {
-    line-height: 1.2;
-    font-weight: 600;
-    text-align: left;
-    padding-bottom: 2vh;
-  }
-h4 {
-    font-weight: 600;
-    text-align: left;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-  }
-
-h6 {
-    font-size: 0.5rem;
-    line-height: 1.2;
-    text-align: left;
-    font-weight: normal;
+h1, h2, h3, h4 {
+  font-size: x-large;
+  line-height: 1.2;
+  font-weight: 600;
+  text-align: left;
+  padding-bottom: 2vh;
   }
   
 p, li, ul, u {
