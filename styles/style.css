@@ -22,9 +22,7 @@ body {
   body {
     width: 90vw;
   }
-  html {
-    font-size:1rem;
-  }
+  
   .sidenote, .sidenote-main .figure-content{
     display: none;
   }
