@@ -152,6 +152,13 @@ hr{
   font-size:small;
   font-family:'Inter',Helvetica,sans-serif;
   padding-bottom: 0vh;
+  padding-top: 4vh;
+}
+.title-content{
+  color: black;
+  font-size:small;
+  font-family:'Inter',Helvetica,sans-serif;
+  padding-bottom: 0vh;
   padding-top: 2vh;
 }
 .ppub{
@@ -233,17 +240,18 @@ input[type="checkbox"] {
   display: grid;
   width: 100%;
   overflow: visible;
-  padding-top: 2vh;
-  padding-bottom: 4vh;
 }
+
 .container-content{
   overflow: auto;
   display: none;
 }
-#ct-r1:checked + .container-content, 
-#ct-r2:checked + .container-content, 
-#ct-r3:checked + .container-content,
-#ct-r4:checked + .container-content,
+
+#materiality-w2:checked + .container-content, 
+#materiality-w5:checked + .container-content, 
+#materiality-w6:checked + .container-content,
+#materiality-w10:checked + .container-content,
+#materiality-w11:checked + .container-content,
 #ct-r5:checked + .container-content,
 #ct-r6:checked + .container-content {
   display:contents;
@@ -260,7 +268,7 @@ input[type="checkbox"] {
 .endnote-main {
   font-size: 80%;
   padding-top: 0vh;
-  padding-bottom: 3vh;
+  padding-bottom: 0vh;
 }
 body {
   counter-reset: sidenote-counter;
