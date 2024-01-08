@@ -113,7 +113,7 @@ ul {
 }
 /*link styling */
 a {
-  color: #505050;;
+  color: #333333;;
 }
 a:link {
   text-decoration: none;
@@ -180,6 +180,9 @@ hr{
   color:#505050;
   font-family: 'Inter',Helvetica,sans-serif;
 }
+.pcite > a {
+  color: #505050;
+}
 .pcite-indented{
   font-size: 90%;
   padding-top: 0.5vh;
@@ -225,6 +228,7 @@ hr{
 .section-title:hover > span,
 .plussign:hover, 
 .ppage:hover > a > span,
+.ptext > a:hover,
 .pcite> a:hover,
 .ppub> .title-symbol:hover {
   color:#e14013;
