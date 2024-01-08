@@ -202,12 +202,21 @@ hr{
   padding-bottom: 2vh;
 }
 .ptext-bold{
-  padding-top:5vh;
+  padding-top: 3vh;
   font-weight: bold;
 }
 .ptext-indented{
   padding-bottom: 2vh;
   padding-left: 2vh;
+}
+.ptext-indented-bold{
+  font-weight: bold;
+  padding-bottom: 2vh;
+  padding-left: 2vh;
+}
+.ptext-indented2{
+  padding-bottom: 2vh;
+  padding-left: 4vh;
 }
 .quote{
   padding-left: 3vh;
