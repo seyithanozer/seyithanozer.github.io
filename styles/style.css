@@ -145,20 +145,20 @@ hr{
   font-size:small;
   font-weight: bold;
   font-family:'Inter',Helvetica,sans-serif;
-  padding-bottom: 2vh;
+  padding-bottom: 1vh;
 }
 .title-year{
   color: black;
   font-size:small;
   font-family:'Inter',Helvetica,sans-serif;
   padding-bottom: 0vh;
-  padding-top: 4vh;
+  padding-top: 1vh;
 }
 .title-content{
   color: black;
   font-size:small;
   font-family:'Inter',Helvetica,sans-serif;
-  padding-bottom: 0vh;
+  padding-bottom: 0.5vh;
   padding-top: 2vh;
 }
 .ppub{
@@ -176,7 +176,6 @@ hr{
 }
 .pcite{
   font-size: 90%;
-  padding-top: 0.5vh;
   color:#505050;
   font-family: 'Inter',Helvetica,sans-serif;
 }
@@ -201,26 +200,26 @@ hr{
   color:black;
   font-family: 'Inter',Helvetica,sans-serif;
 }
-.ptext{
-  padding-bottom: 2vh;
-}
+
 .ptext-bold{
-  padding-top: 3vh;
+  padding-top: 2vh;
   font-weight: bold;
 }
 .ptext-indented{
-  padding-bottom: 2vh;
   padding-left: 2vh;
 }
 .ptext-indented-bold{
   font-weight: bold;
-  padding-bottom: 2vh;
+  padding-top: 2vh;
   padding-left: 2vh;
 }
 .ptext-indented2{
-  padding-bottom: 2vh;
   padding-left: 4vh;
 }
+.pcite{
+  padding-bottom: 0.5vh;
+}
+
 .quote{
   padding-left: 3vh;
 }
