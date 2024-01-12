@@ -356,3 +356,12 @@ body {
   background-size:50vh;
   background-repeat: no-repeat;
 }
+
+
+.back-button{
+  color: black;
+  padding-bottom: 2vh;
+  text-decoration: none;
+  font-size: 200%;
+  font-weight: bold;
+}
