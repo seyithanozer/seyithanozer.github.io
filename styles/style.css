@@ -140,11 +140,12 @@ a:active {
 }
 
 hr{
-  border: 1px solid black;
+  border: 2px solid black;
   padding:none;
   margin-top: 3vh;
   margin-bottom: 2vh;
 }
+
 .section-title{
   color: black;
   font-size:small;
@@ -155,19 +156,22 @@ hr{
 .title-year{
   color: black;
   font-size:small;
+  padding-top:1vh;
   font-family:'Archivo', Arial, Helvetica, sans-serif;
-  padding-bottom: 0vh;
-  padding-top: 1vh;
 }
 .title-content{
   color: black;
   font-size:small;
   font-family:'Archivo', Arial, Helvetica, sans-serif;
   padding-bottom: 0.5vh;
-  padding-top: 2vh;
+  padding-top: 1vh;
 }
 .ppub{
   font-weight: bold;
+}
+
+.project-numbering{
+  font-size: 80%;
 }
 .title-symbol{
   color: black;
@@ -309,8 +313,6 @@ body {
   font-size: 60%;
 }
 
-
-
 .sidenote-number:hover, 
 .sidenote-number:hover > small, 
 .sidenote-main:hover {
@@ -356,7 +358,6 @@ body {
   background-size:50vh;
   background-repeat: no-repeat;
 }
-
 
 .back-button{
   color: black;
