@@ -463,12 +463,10 @@ body {
 }
 
 
-/* Tooltip text */
-.tooltiptext {
-  display:none;
-}
-
-/* Show the tooltip text when you mouse over the tooltip container */
-.plussign:hover +.tooltiptext {
-  display: inline-block;
+.menu-container {
+  background-color: #e2e2e2;
+  position:sticky;
+  top:0;
+  width:100%;
+  z-index:100;
 }
