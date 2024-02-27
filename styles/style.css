@@ -141,9 +141,9 @@ a:active {
 }
 
 hr{
-  border: 2px solid black;
-  padding:none;
+  border: 1.5px solid black;
   margin-top: 3vh;
+  margin-left: 35px;
   margin-bottom: 2vh;
 }
 
@@ -216,7 +216,7 @@ hr{
 
 .bigplussign{
   font-family: 'Inter', Helvetica, sans-serif;
-  font-size:200%;
+  font-size:250%;
   font-weight: bold;
   color:rgb(203, 49, 39);
   
