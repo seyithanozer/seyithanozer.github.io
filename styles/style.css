@@ -464,7 +464,7 @@ body {
 
 
 .menu-container {
-  background-color: #e2e2e2;
+  background-color: transparent;
   position:sticky;
   top:0;
   width:100%;
