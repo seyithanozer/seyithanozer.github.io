@@ -70,6 +70,7 @@ body {
     margin-bottom: 1rem;
   }
 }
+
 /*fonts etc. */
 html {
     vertical-align: top;
@@ -79,6 +80,7 @@ html {
 }
 
 h1, h2, h3, h4 {
+  margin-left: 35px;
   font-size: x-large;
   line-height: 1.2;
   font-weight: 600;
@@ -184,6 +186,7 @@ hr{
   font-family:'Archivo', Arial, Helvetica, sans-serif;
 }
 .title-content{
+  padding-left: 35px;
   color: black;
   font-size:small;
   font-family:'Archivo', Arial, Helvetica, sans-serif;
@@ -193,6 +196,10 @@ hr{
 .ppub{
   font-weight: bold;
   padding-left:35px;
+}
+
+.ptext{
+  padding-left: 35px;
 }
 
 .ppub-main{
@@ -290,27 +297,29 @@ hr{
 }
 
 .ptext-bold{
+  padding-left: 35px;
   padding-top: 2vh;
   font-weight: bold;
 }
 .ptext-indented{
-  padding-left: 2vh;
+  padding-left: 70px;
 }
 .ptext-indented-bold{
+  padding-left: 35px;
   font-weight: bold;
   padding-top: 2vh;
-  padding-left: 2vh;
 }
 .ptext-indented2{
   padding-left: 4vh;
 }
 .pcite,
 .pcite-main{
+  padding-left: 35px;
   padding-bottom: 0.5vh;
 }
 
 .quote{
-  padding-left: 3vh;
+  padding-left: 70px;
 }
 .pcite:hover > a > span,
 .section-title:hover > span,
@@ -396,8 +405,8 @@ body {
 
 /* Read Bar */
 #read-bar {
-  margin: none;
-  padding: none;
+  padding-left: 35px;
+  padding-right: 35px;
   position: fixed;
   bottom: 99vh;
   width: 100vw;
