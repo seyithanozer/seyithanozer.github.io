@@ -355,11 +355,11 @@ input[type="checkbox"] {
 
 .container-content{
   overflow: auto;
-  display: none;
+  display: contents;
 }
 
 #ct-og1:checked ~*.container-content{
-  display:contents;
+  display:none;
 }
 
 /* Sidenotes */
