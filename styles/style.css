@@ -171,7 +171,7 @@ hr{
   font-family:'Archivo', Arial, Helvetica, sans-serif;
 }
 .title-type-hidden{
-  color: #505050;
+  color: #5D5D5D;
   padding-left: 35px;
   text-align: left;
   font-size:small;
@@ -236,11 +236,11 @@ hr{
 
 .pcite{
   font-size: 90%;
-  color:#505050;
+  color:#5D5D5D;
   font-family: 'Archivo', Arial, Helvetica, sans-serif;
 }
 .pcite > a {
-  color: #505050;
+  color: #5D5D5D;
 }
 
 .pcite > span {
@@ -255,7 +255,7 @@ hr{
 .pcite-hidden{
   padding-left: 0;
   padding-left: 35px;
-  color:#505050;
+  color:#5D5D5D;
   font-family: 'Archivo', Arial, Helvetica, sans-serif;
   font-size: 100%;
 }
@@ -280,12 +280,12 @@ hr{
 .pcite-indented{
   font-size: 90%;
   padding-top: 0.5vh;
-  color:#505050;
+  color:#5D5D5D;
   font-family: 'Archivo', Arial, Helvetica, sans-serif;
   padding-left: 35px;
 }
 .pdesc{
-  color:#505050;
+  color:#5D5D5D;
   font-family: 'Archivo', Arial, Helvetica, sans-serif;
 }
 .ppage{
