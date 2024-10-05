@@ -355,11 +355,11 @@ input[type="checkbox"] {
 
 .container-content{
   overflow: auto;
-  display: contents;
+  display: none;
 }
 
 #ct-og1:checked ~*.container-content{
-  display:none;
+  display:contents;
 }
 
 /* Sidenotes */
@@ -478,4 +478,32 @@ body {
   top:0;
   width:100%;
   z-index:100;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 0px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 2vw;
+  background-color: transparent;
+  color: rgb(203, 49, 39);
+  text-align: right;
+  border-radius: 0px;
+  padding: 5px 0;
+  font-size:70%;
+  font-family:'Archivo', Arial, Helvetica, sans-serif;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 70%;
+  right: 70%;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
