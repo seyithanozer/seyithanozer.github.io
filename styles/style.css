@@ -150,8 +150,9 @@ hr{
 }
 
 .introduction {
+  color: black;
   padding-left: 35px;
-  font-size: 120%;
+  font-size: 150%;
   padding-top: 0vh;
   padding-bottom: 2vh;
 }
@@ -247,6 +248,7 @@ hr{
 }
 
 .pcite-main{
+  font-size: 110%;
   padding-left: 35px;
   color:black;
   font-family: 'Archivo', Arial, Helvetica, sans-serif;
@@ -472,29 +474,29 @@ body {
 
 
 html:has(.courses:hover) .courses {
-  color: #1A9682;
+  color: black;
 }
 
 html:has(.outputs:hover) .outputs {
-  color: #1A9682;
+  color: black;
 }
 
 .hidden-image {
-  position: relative;
-  margin-top: -200px;
+  margin-top: -100px;
   height: auto;
   width: 400px;
   display: none;
-  z-index: -1;
   padding-left: 30vw;
-}
-.pcite-main:hover +.hidden-image {
-  display: block;
-  position: fixed;
+  z-index: -1;
 }
 
 .pcite-main:hover{
-  color:RGB(203, 49, 39)
+  color:RGB(203, 49, 39);
+}
+
+.pcite-main:hover +.hidden-image {
+  display: block;
+  position: absolute;
 }
 
 .expand {
