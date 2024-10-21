@@ -151,9 +151,9 @@ hr{
 
 .introduction {
   padding-left: 35px;
-  font-size: 100%;
+  font-size: 120%;
   padding-top: 0vh;
-  padding-bottom: 0vh;
+  padding-bottom: 2vh;
 }
 
 .section-title{
@@ -223,10 +223,9 @@ hr{
 
 .bigplussign{
   font-family: 'Inter', Helvetica, sans-serif;
-  font-size:250%;
+  font-size:200%;
   font-weight: bold;
   color:rgb(203, 49, 39);
-  
 }
 
 .housing{
@@ -472,38 +471,33 @@ body {
 }
 
 
-.menu-container {
-  background-color: transparent;
-  position:sticky;
-  top:0;
-  width:100%;
-  z-index:100;
+html:has(.courses:hover) .courses {
+  color: #1A9682;
 }
 
-.tooltip {
+html:has(.outputs:hover) .outputs {
+  color: #1A9682;
+}
+
+.hidden-image {
   position: relative;
-  display: inline-block;
-  border-bottom: 0px dotted black;
+  margin-top: -200px;
+  height: auto;
+  width: 400px;
+  display: none;
+  z-index: -1;
+  padding-left: 30vw;
+}
+.pcite-main:hover +.hidden-image {
+  display: block;
+  position: fixed;
 }
 
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 2vw;
-  background-color: transparent;
+.pcite-main:hover{
+  color:RGB(203, 49, 39)
+}
+
+.expand {
+  font-weight: bolder;
   color: rgb(203, 49, 39);
-  text-align: right;
-  border-radius: 0px;
-  padding: 5px 0;
-  font-size:70%;
-  font-family:'Archivo', Arial, Helvetica, sans-serif;
-  
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
-  top: 70%;
-  right: 70%;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
 }
