@@ -25,6 +25,10 @@ body {
     display: none;
   }
 
+  .pcite-main:hover +.hidden-image {
+    visibility: hidden;
+  }
+
 }
 @media (min-width: 1000px) {
   body {
@@ -484,11 +488,12 @@ html:has(.outputs:hover) .outputs {
 .hidden-image {
   margin-top: -100px;
   height: auto;
-  width: 400px;
+  width: 30vw;
   display: none;
-  padding-left: 30vw;
+  padding-left: 47vw;
   z-index: -1;
 }
+
 
 .pcite-main:hover{
   color:RGB(203, 49, 39);
