@@ -258,6 +258,7 @@ hr{
   font-family: 'Archivo', Arial, Helvetica, sans-serif;
 }
 .pcite-hidden{
+  font-size: 110%;
   padding-left: 0;
   padding-left: 35px;
   color:#5D5D5D;
@@ -478,11 +479,11 @@ body {
 
 
 html:has(.courses:hover) .courses {
-  color: black;
+  color:RGB(203, 49, 39);
 }
 
 html:has(.outputs:hover) .outputs {
-  color: black;
+  color:RGB(203, 49, 39);
 }
 
 .hidden-image {
