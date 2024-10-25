@@ -272,7 +272,6 @@ hr{
 
 .pcite-main > span,
 .pcite-hidden > span {
-  color:black;
   text-decoration: none;
 }
 
@@ -333,6 +332,7 @@ hr{
 .ppage:hover > a > span,
 .ptext > a:hover,
 .pcite> a:hover,
+.pcite-main>a:hover,
 .ppub> .title-symbol:hover {
   color:RGB(203, 49, 39);
 }
@@ -486,7 +486,7 @@ html:has(.outputs:hover) .outputs {
   color:RGB(203, 49, 39);
 }
 
-.hidden-image {
+.hidden-image-container {
   margin-top: -100px;
   height: auto;
   width: 30vw;
@@ -496,13 +496,19 @@ html:has(.outputs:hover) .outputs {
 }
 
 
-.pcite-main:hover{
-  color:RGB(203, 49, 39);
-}
-
-.pcite-main:hover +.hidden-image {
+.pcite-main:hover +.hidden-image-container {
   display: block;
   position: absolute;
+}
+
+.hidden-image {
+  width: 30vw;
+  padding-bottom:0%
+}
+
+.hidden-sidenote {
+  font-size: 80%;
+  width: 30vw;
 }
 
 .expand {
