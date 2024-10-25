@@ -224,6 +224,7 @@ hr{
 .plussign{
   font-family: 'Inter', Helvetica, sans-serif;
   color:rgb(203, 49, 39);
+  font-weight: bold;
 }
 
 .bigplussign{
@@ -267,7 +268,6 @@ hr{
 }
 .pcite-main > a {
   color: black;
-  font-weight: bold;
 }
 
 .pcite-main > span,
