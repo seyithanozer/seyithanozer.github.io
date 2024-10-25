@@ -475,8 +475,8 @@ body {
 }
 
 
-html:has(.courses:hover) .courses {
-  color:RGB(255, 59, 8);
+html:has(.courses:hover) .courses > a{
+  color:blue;
 }
 
 html:has(.outputs:hover) .outputs {
@@ -499,13 +499,14 @@ html:has(.outputs:hover) .outputs {
 }
 
 .hidden-image {
-  width: 30vw;
-  padding-bottom:0%
+  max-width: 30vw;
+  padding-bottom:0%;
+  max-height: 40vh;
 }
 
-.hidden-sidenote {
-  font-size: 80%;
-  width: 30vw;
+figcaption {
+  font-size: 70%;
+  width: 15vw;
 }
 
 .expand {
