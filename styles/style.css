@@ -23,7 +23,7 @@ body {
     display: none;
   }
 
-  .pcite-main:hover +.hidden-image {
+  figcaption, .hidden-image {
     visibility: hidden;
   }
 
@@ -203,6 +203,7 @@ hr{
 
 .ptext{
   padding-left: 35px;
+  font-size: 100%;
 }
 
 .ppub-main{
