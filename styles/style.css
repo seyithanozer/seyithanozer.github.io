@@ -93,6 +93,7 @@ h1, h2, h3, h4 {
 p, li, ul, u {
     font-family: 'Inter',Arial, Helvetica, sans-serif;
     line-height: 1.5;
+    font-weight: 400;
   }
 
 sup {
@@ -207,7 +208,7 @@ hr{
 }
 
 .ppub-main{
-  font-weight: bold;
+  font-weight: 500;
   padding-left: 35px;
 }
 
@@ -249,6 +250,10 @@ hr{
 
 .pcite > span {
   text-decoration: none;
+}
+
+b {
+  font-weight: 600;
 }
 
 .pcite-main{
@@ -302,14 +307,14 @@ hr{
 .ptext-bold{
   padding-left: 35px;
   padding-top: 2vh;
-  font-weight: bold;
+  font-weight: 600;
 }
 .ptext-indented{
   padding-left: 70px;
 }
 .ptext-indented-bold{
   padding-left: 35px;
-  font-weight: bold;
+  font-weight: 600;
   padding-top: 2vh;
 }
 .ptext-indented2{
@@ -384,7 +389,7 @@ body {
   position: relative;
   vertical-align: baseline;
   font-size: 80%;
-  font-weight: bold;
+  font-weight: 600;
 }
 /* Counter in the main body. */
 .sidenote-number::after {
