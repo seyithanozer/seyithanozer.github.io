@@ -486,16 +486,16 @@ body {
 
 
 html:has(.courses:hover) .courses > a{
-  color:#F07167;
+  color:#BC412B
 }
 
 
 html:has(.outputs:hover) .outputs{
-  color:#F07167;
+  color:#BC412B;
 }
 
 html:has(.projects:hover) .projects{
-  color:#F07167;
+  color:#BC412B
 }
 
 .hidden-image-container {
