@@ -10,7 +10,7 @@
 
 body {
   height: 100%;
-  background-color: #f3eee5;
+  background-color: #f4f5f6;
   margin-left: 2vw;
   margin-top: 5vh;
 }
@@ -82,7 +82,7 @@ html {
 }
 
 h1, h2, h3, h4 {
-  margin-left: 35px;
+  margin-left: 40px;
   font-size: x-large;
   line-height: 1.2;
   font-weight: 600;
@@ -125,7 +125,7 @@ a:visited {
   text-decoration: none;
 }
 a:hover {
-  color:RGB(255, 59, 8);
+  color:#F07167;
   text-decoration: none;
 }
 a:active {
@@ -148,13 +148,13 @@ a:active {
 hr{
   border: 1.5px solid black;
   margin-top: 3vh;
-  margin-left: 35px;
+  margin-left: 40px;
   margin-bottom: 2vh;
 }
 
 .introduction {
   color: black;
-  padding-left: 35px;
+  padding-left: 40px;
   font-size: 150%;
   padding-top: 0vh;
   padding-bottom: 2vh;
@@ -168,29 +168,32 @@ hr{
   padding-bottom: 1vh;
 }
 .title-year{
+  display:block;
+  width:40px;
   color: black;
-  text-align: left;
+  text-align: right;
   font-size:70%;
-  padding-top:1vh;
+  padding-top:0vh;
+  padding-bottom: 0vh;
   font-family:'Inter', Arial, Helvetica, sans-serif;
 }
 .title-type-hidden{
   color: #5D5D5D;
-  padding-left: 35px;
+  padding-left: 40px;
   text-align: left;
   font-size:small;
   padding-top:1vh;
   font-family:'Inter', Arial, Helvetica, sans-serif;
 }
 .title-type{
-  padding-left: 35px;
-  color: black;
+  padding-left: 40px;
   font-size:small;
+  font-weight:500;
   padding-top:1vh;
   font-family:'Inter', Arial, Helvetica, sans-serif;
 }
 .title-content{
-  padding-left: 35px;
+  padding-left: 40px;
   color: black;
   font-size:small;
   font-family:'Inter', Arial, Helvetica, sans-serif;
@@ -199,17 +202,17 @@ hr{
 }
 .ppub{
   font-weight: bold;
-  padding-left:35px;
+  padding-left:40px;
 }
 
 .ptext{
-  padding-left: 35px;
+  padding-left: 40px;
   font-size: 100%;
 }
 
 .ppub-main{
   font-weight: 500;
-  padding-left: 35px;
+  padding-left: 40px;
 }
 
 .project-numbering{
@@ -223,7 +226,7 @@ hr{
 }
 .plussign{
   font-family: 'Inter', Helvetica, sans-serif;
-  color:rgb(255, 59, 8);
+  color:#F07167;
   font-weight: bold;
 }
 
@@ -231,7 +234,7 @@ hr{
   font-family: 'Inter', Helvetica, sans-serif;
   font-size:200%;
   font-weight: bold;
-  color:rgb(255, 59, 8);
+  color:#F07167;
 }
 
 .housing{
@@ -258,14 +261,14 @@ b {
 
 .pcite-main{
   font-size: 110%;
-  padding-left: 35px;
+  padding-left: 40px;
   color:black;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
 }
 .pcite-hidden{
   font-size: 110%;
   padding-left: 0;
-  padding-left: 35px;
+  padding-left: 40px;
   color:#5D5D5D;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
 }
@@ -282,7 +285,7 @@ b {
 .pcite-hidden > .underline-link {
   font-weight: normal;
   text-decoration: underline;
-  text-decoration-color:rgb(255, 59, 8);
+  text-decoration-color:#F07167;
 }
 
 .pcite-indented{
@@ -290,7 +293,7 @@ b {
   padding-top: 0.5vh;
   color:#5D5D5D;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
-  padding-left: 35px;
+  padding-left: 40px;
 }
 .pdesc{
   color:#5D5D5D;
@@ -305,7 +308,7 @@ b {
 }
 
 .ptext-bold{
-  padding-left: 35px;
+  padding-left: 40px;
   padding-top: 2vh;
   font-weight: 600;
 }
@@ -313,7 +316,7 @@ b {
   padding-left: 70px;
 }
 .ptext-indented-bold{
-  padding-left: 35px;
+  padding-left: 40px;
   font-weight: 600;
   padding-top: 2vh;
 }
@@ -322,7 +325,7 @@ b {
 }
 .pcite,
 .pcite-main{
-  padding-left: 35px;
+  padding-left: 40px;
   padding-bottom: 0.5vh;
 }
 
@@ -337,7 +340,7 @@ b {
 .pcite> a:hover,
 .pcite-main>a:hover,
 .ppub> .title-symbol:hover {
-  color:RGB(255, 59, 8);
+  color:#F07167;
 }
 
 .ptext> a,
@@ -401,7 +404,7 @@ body {
 .sidenote-number:hover, 
 .sidenote-number:hover > small, 
 .sidenote-main:hover {
-  color:RGB(255, 59, 8);
+  color:#F07167;
 }
 
 .unselectable {
@@ -414,8 +417,8 @@ body {
 
 /* Read Bar */
 #read-bar {
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-left: 40px;
+  padding-right: 40px;
   position: fixed;
   bottom: 99vh;
   width: 100vw;
@@ -473,20 +476,26 @@ body {
 }
 
 .footer-text{
-  color: RGB(255, 59, 8);
+  color: #F07167;
   text-align: left;
-  padding-left:35px;
+  padding-left:40px;
   font-size:70%;
   font-family:'Inter', Arial, Helvetica, sans-serif;
 }
 
 
+
 html:has(.courses:hover) .courses > a{
-  color:blue;
+  color:#F07167;
 }
 
-html:has(.outputs:hover) .outputs {
-  color:RGB(255, 59, 8);
+
+html:has(.outputs:hover) .outputs{
+  color:#F07167;
+}
+
+html:has(.projects:hover) .projects{
+  color:#F07167;
 }
 
 .hidden-image-container {
@@ -519,5 +528,5 @@ figcaption {
 
 .expand {
   font-weight: bolder;
-  color: rgb(255, 59, 8);
+  color: #F07167;
 }
