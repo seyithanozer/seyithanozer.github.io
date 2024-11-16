@@ -281,14 +281,7 @@ b {
   text-decoration: none;
 }
 
-.pcite-main > .underline-link,
-.pcite-hidden > .underline-link {
-  font-weight: normal;
-  text-decoration: underline;
-  text-decoration-color:#F07167;
-}
-
-.pcite-indented{
+.pcite-indented {
   font-size: 90%;
   padding-top: 0.5vh;
   color:#5D5D5D;
