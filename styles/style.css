@@ -484,20 +484,6 @@ body {
 }
 
 
-
-html:has(.courses:hover) .courses > a{
-  color:#BC412B
-}
-
-
-html:has(.outputs:hover) .outputs{
-  color:#BC412B;
-}
-
-html:has(.projects:hover) .projects{
-  color:#BC412B
-}
-
 .hidden-image-container {
   margin-top: -100px;
   height: auto;
@@ -528,5 +514,8 @@ figcaption {
 
 .expand {
   font-weight: bolder;
-  color: #F07167;
+}
+
+.symbols {
+  display:none;
 }
