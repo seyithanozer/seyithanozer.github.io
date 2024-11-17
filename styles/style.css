@@ -510,5 +510,6 @@ figcaption {
 }
 
 .symbols {
-  display:none;
+  width:10;
+  height:10;
 }
