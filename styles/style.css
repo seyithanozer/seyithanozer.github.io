@@ -23,11 +23,12 @@ body {
     display: none;
   }
 
-  figcaption, .hidden-image {
+  figcaption, .hidden-image{
     visibility: hidden;
   }
 
-}
+  }
+  
 @media (min-width: 1000px) {
   body {
     width: 45vw;
@@ -513,3 +514,17 @@ figcaption {
   width:10;
   height:10;
 }
+
+.legend{
+  padding-left: 40px;
+  text-align: right;
+  font-size:small;
+  font-weight:500;
+  padding-top:1vh;
+  font-family:'Inter', Arial, Helvetica, sans-serif;
+}
+@media (max-width: 999px) {
+  .legend {
+    display: none;
+  }
+  }
