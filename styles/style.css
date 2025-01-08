@@ -359,13 +359,13 @@ input[type="checkbox"] {
   overflow: visible;
 }
 
-.container-content{
+.container-content-ro{
   overflow: auto;
-  display: none;
+  display: contents;
 }
 
-#ct-og1:checked ~*.container-content{
-  display:contents;
+#ct-ro:checked ~*.container-content-ro{
+  display:none;
 }
 
 /* Sidenotes */
