@@ -135,6 +135,9 @@ font-size: 0.6rem;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   padding-bottom: 0.5vh;
 }
+.pcite-hidden > a {
+  color: #5D5D5D;;
+}
 .pcite-main > span,
 .pcite-hidden > span {
   text-decoration: none;
