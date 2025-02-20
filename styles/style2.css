@@ -94,6 +94,30 @@ sup {
 font-size: 0.6rem;
 }
 
+/* LINKS */
+
+a {
+  color:black;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  color:#F07167 !important;
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+
 /* HOME PAGE FONTS */
 .main-header {
   color: black;
@@ -135,9 +159,11 @@ font-size: 0.6rem;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   padding-bottom: 0.5vh;
 }
+
 .pcite-hidden > a {
-  color: #5D5D5D;;
+  color: #5D5D5D !important;
 }
+
 .pcite-main > span,
 .pcite-hidden > span {
   text-decoration: none;
@@ -160,21 +186,7 @@ font-size: 0.6rem;
 }
 
 
-/* LINKS */
 
-a:link {
-  text-decoration: none;
-}
-a:visited {
-  text-decoration: none;
-}
-a:hover {
-  color:#F07167;
-  text-decoration: none;
-}
-a:active {
-  text-decoration: none;
-}
 
 /* COLLAPSIBLES */
 input[type="checkbox"] {
