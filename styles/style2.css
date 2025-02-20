@@ -97,7 +97,7 @@ font-size: 0.6rem;
 /* LINKS */
 
 a {
-  color:black;
+  color:inherit;
 }
 
 a:link {
@@ -161,7 +161,7 @@ a:active {
 }
 
 .pcite-hidden > a {
-  color: #5D5D5D !important;
+  color: #5D5D5D;
 }
 
 .pcite-main > span,
