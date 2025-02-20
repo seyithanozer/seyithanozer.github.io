@@ -161,9 +161,7 @@ font-size: 0.6rem;
 
 
 /* LINKS */
-a {
-  color: #333333;
-}
+
 a:link {
   text-decoration: none;
 }
