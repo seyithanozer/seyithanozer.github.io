@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Seyithan Özer</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
+    <link href="styles/style.css" rel="stylesheet">
+    <script src="scripts/main.js"></script>
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q2TJJ5ZTXG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-Q2TJJ5ZTXG');
+    </script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="scripts/graphs/histogram.js"></script>
+</head>
+
+<body class="content-page">
+    <main>
+        <div id="read-bar">
+            <div id="read-bar-fill"></div>
+        </div>
+
+        <p class="bigplussign"><a href="index.html">&#8592;</a></p>
+
+        <section>
+            <h1>Rebuilding the Terraced House: Contemporary spatial norms in the older housing stock</h1>
+
+            <p class="ptext"> Space standards prescribe minimum dwelling and room sizes based on the spaces deemed necessary for typical domestic activities. The minimum floor areas and dimensions largely derive from anthropometric measurements, standard furniture dimensions, activity zones associated with the use of furniture and daily activities, and general circulation areas as well as the space needed for access.<span class="sidenote-number"><small class="sidenote">For example, the London Housing Design Guide (Mayor of London, 2010) and Design Bulletin 6: Space in the Home (MHLG, 1963) detail how these standards are calculated based on furniture dimensions and typical activities at home.</small></span> They are widely seen by regulators and the housing sector as a reliable measure of dwellings being usable and fit for their intended purpose. Dwelling size not only determines usability but also has a significant long-term impact on the diversity, flexibility, and adaptability of housing, and small dwellings in particular can have a negative effect on the health and well-being of occupants.</p><br>
+            
+            <p class="ptext"> In 2015, the UK government published the Nationally Described Space Standard (NDSS) following a housing standards review. In England, space standards have historically been implemented as a condition for receiving housing subsidies. For example, the Housing Corporation introduced Housing Quality Indicators as a funding requirement for its 2008–2011 and 2011–2015 Affordable Housing Programmes. However, the current Nationally Described Space Standard was introduced as a planning tool, ending the use of space standards as a subsidy condition.<span class="sidenote-number"><small class="sidenote">NDSS was were no longer a funding condition by Homes England in the Affordable Homes Programme 2016–2021.Homes England’s Affordable Homes Programme 2021–2026 funding requires all units to meet at least 85% of the NDSS.An exception to this was the inclusion of some minimum dimensions pertaining to the access and use of dwellings in the Building Regulations. The Approved Document M (2015), now incorporates minimum dimensions for circulation spaces, bathrooms, WCs, kitchens, and bedrooms according to three categories: M4(1) visitable (applicable to all dwellings), M4(2) accessible and adaptable, and M4(3) wheelchair user dwellings.</small></span></p><br>
+
+            <p class="ptext"> This change was arguably a sensible one as the way affordable housing was developed was being changed. New affordable housing in England is mainly funded and provided through three primary means: a) housing associations supported by subsidies from Homes England and the Greater London Authority, b) housing associations using their own income generated from activities in the private housing sector (cross-subsidies), and c) planning obligations imposed on new private developments.<span class="sidenote-number"><small class="sidenote">According to the National Planning Policy Framework (2019), in developments with more than 10 dwellings, generally at least 10% of units must be for affordable homeownership, which includes homes offered via shared ownership and equity loans.</small></span> While most affordable housing in the past received state subsidies, the number of affordable housing units gained through planning obligations imposed on new private developments have exceeded the number of affordable housing units built using government subsidies. As most affordable housing was set to be gained through planning obligations, the implementation of standards was left to the local authorities, who negotiate these planning obligations.</p><br>
+
+            <p class="ptext"> As the current standards are implemented through local plans, the decision to adopt the NDSS remains at the discretion of local authorities. The local authorities wishing to adopt the NDSS must provide an assessment of the need for and economic viability of incorporating the NDSS. This is done in order to prevent increased standards from creating additional construction and land costs that are unsustainable in the local housing market, impacting housing affordability.</p><br>
+
+            <p class="ptext"> We submitted environmental information requests to all 322 local planning authorities in England, seeking information on whether they have adopted the NDSS into their local plans or supplementary planning dicuments. We also asked whether they are planning to do so. Of all contacted local authorities, 79% (n=253) responded: 37% of them (n=93) had adopted the NDSS in their local plans and policies, and a further 8% (n=21) adopted them as a design guidance in the form of a Supplementary Planning Document (SPD).</p><br>
+
+            <div id="histogram1"></div>
+
+            <p class="ptext">These changes has had a significant impact on the space standards in new affordable housing. In particular, a shift to supply by the private sector means that incentivising and controlling affordable housing and its design is more difficult, as it has become a by-product of speculative housing developments and is thus of secondary concern. Consequently, the design of affordable housing is influenced to a greater extent by the preferences of the private sector. While the private sector, alone, cannot provide affordable housing and need local authority or housing association partners, they are not always involved at the start of a development and most new affordable housing gained through planning obligations are sold on ‘off-plan’ or ‘off-the-shelf’, i.e. they are already fully designed and specified by the time they are handed over to housing associations.</p>
+
+            <p class="ptext">We analysed the state of standards in the new affordable housing stock, through a sample of 153 housing developments in England that included affordable housing owned or managed by 15 of the largest housing associations and were completed or marketed for sale in 2021. The dataset included information on the name of the development and developer, location, development type (housing association-led or private sector-led), total number of units, and number of affordable rented, social rented and shared ownership units. From these developments, information on all type plans for affordable housing was collected, including the type plan name (as used in the architectural drawings submitted to the planning department), the number of times each type is repeated in a development, the housing tenure, the number of floors, bedrooms and bedspaces, the gross internal floor area and the layout type.</p><br>
+
+            <p class="ptext">Our study found that only 57% of new-built affordable housing meets the recommended space standards of the NDSS. The most significant difference in compliance rates related to dwelling types. While flats had a high compliance rate with both standards (NDSS: 71%), houses only showed similar levels of compliance with the lower HQI standards (NDSS: 18%).</p><br>
+
+            <p class="ptext">This difference was, to certain extent, linked to the adoption of NDSS (p< 0.001). In local planning authorities where the NDSS was adopted, compliance with the space standard was overall higher (69% compared to 29%). In the studied sample, 95% of affordable housing units in London were flats, compared to only 30% of units outside London (cf. DLUHC, 2022b). As a result, 55% of flats in the sample were from London, where space standards comparable to the NDSS were already adopted in 2011 and applied to all tenures and developments in the metropolitan region. However, only 28% of local authorities nationally had adopted the NDSS. The higher compliance rates of flats, therefore, relates to the highest compliance rates in London (79%). Still, however, across the country, many dwellings were below-standard.</p><br>
+            
+            <p class="ptext">The differences in the compliance rates of dwelling types with the NDSS relate, only to a certain extent, to local plans. The differences in how flats and houses meet the standard were persistent across regions. The overall compliance rate of flats was 74% in areas where the NDSS was adopted and 68% where it was not, compared to 47% and 13% for houses. These findings suggest that there are different industry standards for flats and houses.</p><br>
+
+            <p class="ptext">Compared to previous standards, Housing Quality Indicators, that are 2–9 m² smaller than the corresponding NDSS and differentiate the standards for houses and flats differently, the overall compliance rates were similar between flats and houses. Overall, 87% of flats and 80% of houses complied with the HQI standards. The strong correlation between dwelling types and standards are likely a result of how these standards are generated and implemented. While the NDSS was adapted from the London Housing Design Guide, which was written for London where the majority of new housing consists of flats, the HQIs were national and therefore had a greater concern for single-family houses. While the method for calculating overall dwelling sizes used in the LHDG is appropriate for flats (i.e. adding up minimum room sizes), terraced houses pose additional geometric problems. In terraced houses, the living room and kitchen are located on the ground-floor and bedrooms and bathrooms on the first-floor. Terraced housing design thus requires balancing room sizes and layout efficiency on identically shaped and sized ground- and first-floor levels. However, according to room-by-room calculations, the floor areas required for these spaces are not the same.</p><br>
+            
+            <p class="ptext">We also found that the HQI standards are preferred by private housebuilders in developments that predominantly consist of houses (thus outside London). Comparing private house types by different volume housebuilders, all had sizes close to the HQI standard. In addition, in many of the planning applications analysed, the HQI scores of affordable unit types were included on submitted plans, even though they are not required. The HQIs were used as a voluntary industry standard or a measure to demonstrate the usability of housing. This not only shows that some standards are habitually used in housing organisations, but that standards are used as a form of reassurance both at an organisational and regulatory level. Thus, the prolific use of standard types creates consistency in dwelling size across affordable housing, even when space standards are not mandatory.</p><br>
+        </section>
+    </main>
+    <script>
+        createHistogram('scripts/graphs/data_1.csv', 'histogram1');
+    </script>
+</body>
+
+</html>
