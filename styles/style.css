@@ -345,3 +345,127 @@ body {
   background-color: black;
 }
 
+
+/* PGCERT PAGE */
+
+.pgcert-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+  height: 90vh;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.pgcert-grid-item {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;  /* horizontal centering */
+  align-items: center;      /* vertical centering */
+  text-align: center;       /* center multiline text */
+  padding: 10px;            /* add padding to prevent edge overflow */
+  word-wrap: break-word;    /* force wrapping */
+  overflow-wrap: break-word;
+}
+
+.pgcert-grid-item:hover {
+  background-color: #ddd;
+}
+
+/* Hidden checkboxes */
+.popup-toggle {
+  display: none;
+}
+
+
+.overlay-container {
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+@media (max-width: 999px) {
+  .overlay-container {
+    position: static;  /* overlay flows below grid */
+    height: auto;
+  }
+}
+
+.overlay {
+  display: none;
+  position: relative;
+  height: auto;
+  width: 100%;
+  background: transparent;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  pointer-events: auto;
+}
+
+/* Overlay text */
+.overlay p {
+  background: #f0f0f0;
+  padding: 20px;
+  margin: 20px;
+}
+
+@media (max-width: 999px) {
+  .overlay {
+    position: static;
+    left: auto; 
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+  }
+  .overlay p {
+    max-width: 90vw;
+  }
+}
+
+@media (min-width: 1000px) {
+  .overlay-container {
+    position: fixed;  
+    top: 0;         
+    left: 50vw;
+    width: 50vw;
+    height: 100vh;
+    overflow-y: auto;
+  }
+
+  .overlay {
+    position: relative;
+    top: 55px;
+    left: 0;
+    height: auto;
+    width: 100%;
+    /* REMOVE display: flex here! */
+    flex-direction: column;
+  }
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
+}
+
+/* Show overlay when checkbox is checked */
+#popup1:checked ~ .overlay-container #content1,
+#popup2:checked ~ .overlay-container #content2,
+#popup3:checked ~ .overlay-container #content3,
+#popup4:checked ~ .overlay-container #content4,
+#popup5:checked ~ .overlay-container #content5,
+#popup6:checked ~ .overlay-container #content6,
+#popup7:checked ~ .overlay-container #content7,
+#popup8:checked ~ .overlay-container #content8,
+#popup9:checked ~ .overlay-container #content9 {
+  display: flex;
+}
+
+
