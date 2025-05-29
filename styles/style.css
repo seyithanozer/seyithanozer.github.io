@@ -354,7 +354,7 @@ body {
   grid-template-rows: repeat(4, 1fr);
   gap: 10px;
   height: 90vh;
-  padding: 10px;
+  padding: 0px;
   box-sizing: border-box;
 }
 
@@ -412,8 +412,9 @@ body {
 /* Overlay text */
 .overlay p {
   background: #f0f0f0;
-  padding: 20px;
-  margin: 20px;
+  padding-top: 50px;
+  padding-left: 0px;
+  padding-right: 40px;
 }
 
 @media (max-width: 999px) {
