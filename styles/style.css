@@ -358,6 +358,10 @@ body {
   box-sizing: border-box;
 }
 
+.grid-wrapper {
+  display: contents;
+}
+
 .pgcert-grid-item {
   border: 1px solid black;
   display: flex;
@@ -455,17 +459,9 @@ body {
   cursor: pointer;
 }
 
-/* Show overlay when checkbox is checked */
-#popup1:checked ~ .overlay-container #content1,
-#popup2:checked ~ .overlay-container #content2,
-#popup3:checked ~ .overlay-container #content3,
-#popup4:checked ~ .overlay-container #content4,
-#popup5:checked ~ .overlay-container #content5,
-#popup6:checked ~ .overlay-container #content6,
-#popup7:checked ~ .overlay-container #content7,
-#popup8:checked ~ .overlay-container #content8,
-#popup9:checked ~ .overlay-container #content9 {
-  display: flex;
+.pgcert-grid-item.active {
+  background-color: #ddd;
 }
+
 
 
