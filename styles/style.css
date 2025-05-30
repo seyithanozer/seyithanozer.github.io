@@ -235,7 +235,7 @@ input[type="checkbox"] {
 
 figcaption {
   font-size: 70%;
-  width: 15vw;
+  max-width: 30vw;
 }
 
 
@@ -353,8 +353,8 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
   gap: 10px;
-  height: 90vh;
-  padding: 0px;
+  height: 75vh;
+  padding-top: 10px;
   box-sizing: border-box;
 }
 
@@ -384,8 +384,9 @@ body {
 
 
 .overlay-container {
-  top: 0;
-  left: 0;
+  padding-top: 90px;
+  padding-left: 0;
+  padding-bottom: 50px;
   width: 100%;
   pointer-events: none;
 }
@@ -412,9 +413,9 @@ body {
 /* Overlay text */
 .overlay p {
   background: #f0f0f0;
-  padding-top: 50px;
+  padding-top: 10px;
   padding-left: 0px;
-  padding-right: 40px;
+  padding-right: 10px;
 }
 
 @media (max-width: 999px) {
