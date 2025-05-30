@@ -236,7 +236,7 @@ input[type="checkbox"] {
 
 figcaption {
   font-size: 70%;
-  width: 15vw;
+  max-width: 30vw;
 }
 
 /* PAGES */
