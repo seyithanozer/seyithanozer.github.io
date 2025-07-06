@@ -368,20 +368,51 @@ body {
   justify-content: center;  /* horizontal centering */
   align-items: center;      /* vertical centering */
   text-align: center;       /* center multiline text */
-  padding: 10px;            /* add padding to prevent edge overflow */
+  padding: 10px;            
   word-wrap: break-word;    /* force wrapping */
   overflow-wrap: break-word;
+  background-size: cover;
+  background-position: center;
 }
 
 .pgcert-grid-item:hover {
   background-color: #ddd;
 }
 
+.pgcert-grid-item.active {
+  background-color: #ddd;
+}
+
+
+
+.pgcert-grid-item[for="popup2"] {
+  background-image: url('../images/constructive_alignment.png');
+}
+
+.pgcert-grid-item[for="popup4"] {
+  background-image: url('../images/experiential_learning.png');
+}
+
+.pgcert-grid-item[for="popup6"] {
+  background-image: url('../images/signature_pedagogies.png');
+}
+
+.pgcert-grid-item[for="popup8"] {
+  background-image: url('../images/constructivism.png');
+}
+
+.pgcert-grid-item[for="popup10"] {
+  background-image: url('../images/quality_assurance.png');
+}
+
+
+
+
+
 /* Hidden checkboxes */
 .popup-toggle {
   display: none;
 }
-
 
 .overlay-container {
   padding-top: 90px;
@@ -460,10 +491,3 @@ body {
   color: black;
   cursor: pointer;
 }
-
-.pgcert-grid-item.active {
-  background-color: #ddd;
-}
-
-
-
