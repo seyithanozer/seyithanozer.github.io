@@ -363,6 +363,7 @@ body {
 }
 
 .pgcert-grid-item {
+  color:#F07167;
   border: 1px solid black;
   display: flex;
   justify-content: center;  /* horizontal centering */
@@ -383,10 +384,16 @@ body {
   background-color: #ddd;
 }
 
-
+.pgcert-grid-item[for="popup1"] {
+  background-image: url('../images/desk_pedagogy.png');
+}
 
 .pgcert-grid-item[for="popup2"] {
   background-image: url('../images/constructive_alignment.png');
+}
+
+.pgcert-grid-item[for="popup3"] {
+  background-image: url('../images/learning.png');
 }
 
 .pgcert-grid-item[for="popup4"] {
@@ -399,6 +406,10 @@ body {
 
 .pgcert-grid-item[for="popup8"] {
   background-image: url('../images/constructivism.png');
+}
+
+.pgcert-grid-item[for="popup9"] {
+  background-image: url('../images/assessment.png');
 }
 
 .pgcert-grid-item[for="popup10"] {
