@@ -17,8 +17,8 @@
     </script>
     
     <!-- Cookies -->
-    <link rel="stylesheet" id="silktide-consent-manager-css" href="path-to-css/silktide-consent-manager.css">
-    <script src="path-to-js/silktide-consent-manager.js"></script>
+    <link rel="stylesheet" id="silktide-consent-manager-css" href="cookie-banner/silktide-consent-manager.css">
+    <script src="cookie-banner/silktide-consent-manager.js"></script>
     <script>
     silktideCookieBannerManager.updateCookieBannerConfig({
     background: {
@@ -40,7 +40,7 @@
         {
         id: "analytical",
         name: "Analytical",
-        description: "<p>These cookies help us improve the site by tracking which pages are most popular and how visitors move around the site.</p>",
+        description: "<p>These cookies track which pages are most popular and how visitors move around the site.</p>",
         required: false,
         onAccept: function() {
             gtag('consent', 'update', {
@@ -59,7 +59,7 @@
     ],
     text: {
         banner: {
-        description: "<p>I use cookies on my site to analyse traffic.</p>",
+        description: "<p>I use cookies on this website to analyse traffic.</p>",
         acceptAllButtonText: "Accept",
         acceptAllButtonAccessibleLabel: "Accept all cookies",
         rejectNonEssentialButtonText: "Reject",
@@ -68,11 +68,14 @@
         preferencesButtonAccessibleLabel: "Toggle preferences"
         },
         preferences: {
-        title: "Customize your cookie preferences",
-        description: "<p>I respect your right to privacy. You can choose not to allow analytics cookies. Your cookie preferences will apply across the website.</p>",
-        creditLinkText: "Get this banner for free",
+        title: "Customise your cookie preferences",
+        description: "<p><span style=\"color: rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, Arial, sans-serif; font-size: 16px; letter-spacing: normal;\">You can choose not to allow analytics cookies. Your cookie preferences will apply across the website.</span></p>",
+        creditLinkText: "Source",
         creditLinkAccessibleLabel: "Get this banner for free"
         }
+    },
+    position: {
+        banner: "bottomCenter"
     }
     });
     </script>
