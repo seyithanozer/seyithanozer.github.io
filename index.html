@@ -16,6 +16,67 @@
         gtag('js', new Date());
         gtag('config', 'G-Q2TJJ5ZTXG');
     </script>
+    
+    <!-- Cookies -->
+    <link rel="stylesheet" id="silktide-consent-manager-css" href="path-to-css/silktide-consent-manager.css">
+    <script src="path-to-js/silktide-consent-manager.js"></script>
+    <script>
+    silktideCookieBannerManager.updateCookieBannerConfig({
+    background: {
+        showBackground: true
+    },
+    cookieIcon: {
+        position: "bottomRight"
+    },
+    cookieTypes: [
+        {
+        id: "necessary",
+        name: "Necessary",
+        description: "<p>These cookies are necessary for the website to function properly and cannot be switched off. They help with things like logging in and setting your privacy preferences.</p>",
+        required: true,
+        onAccept: function() {
+            console.log('Add logic for the required Necessary here');
+        }
+        },
+        {
+        id: "analytical",
+        name: "Analytical",
+        description: "<p>These cookies help us improve the site by tracking which pages are most popular and how visitors move around the site.</p>",
+        required: false,
+        onAccept: function() {
+            gtag('consent', 'update', {
+            analytics_storage: 'granted',
+            });
+            dataLayer.push({
+            'event': 'consent_accepted_analytical',
+            });
+        },
+        onReject: function() {
+            gtag('consent', 'update', {
+            analytics_storage: 'denied',
+            });
+        }
+        }
+    ],
+    text: {
+        banner: {
+        description: "<p>I use cookies on my site to analyse traffic.</p>",
+        acceptAllButtonText: "Accept",
+        acceptAllButtonAccessibleLabel: "Accept all cookies",
+        rejectNonEssentialButtonText: "Reject",
+        rejectNonEssentialButtonAccessibleLabel: "Reject non-essential",
+        preferencesButtonText: "Preferences",
+        preferencesButtonAccessibleLabel: "Toggle preferences"
+        },
+        preferences: {
+        title: "Customize your cookie preferences",
+        description: "<p>I respect your right to privacy. You can choose not to allow analytics cookies. Your cookie preferences will apply across the website.</p>",
+        creditLinkText: "Get this banner for free",
+        creditLinkAccessibleLabel: "Get this banner for free"
+        }
+    }
+    });
+    </script>
 </head>
 
 <body>
@@ -44,24 +105,21 @@
             </figure>
             
             <p class="title-type courses">Design Studio | MArch, University of Hertfordshire, 2024-25</p>
-            <p class="pcite-main "><a href="courses/housing-for-culture.html"><b>Housing x Culture</b></a></p>
+            <p class="pcite-main "><a href="courses/housing-for-culture.html"><b>Housing x Culture &#8594;</b></a></p>
             <figure class="hidden-image-container">
                 <img class="hidden-image" src="images/housing_culture.webp">
                 <figcaption>Barbican Centre by Chamberlin, Powell and Bon. Source: RIBA</figcaption>
             </figure>
 
             <p class="title-type courses">Research Studio | MArch, University of Hertfordshire, 2023-24, 2024-25</p>
-            <p class="pcite-main "><a href="courses/data-in-housing.html"><b>Evidence-based Housing Design &#10132;</b></a></p>
-            <figure class="hidden-image-container">
-                <img class="hidden-image" src="images/Private-Developments.gif">
-            </figure>
+            <p class="pcite-main "><a href="courses/data-in-housing.html"><b>Evidence-based Housing Design &#8594;</b></a></p>
 
             <div class="hidden-content-t">
                 <p class="title-type courses">Masterclass | MISK Art Week, Riyadh, December 2024</p>
-                <p class="pcite-main "><a href="https://miskartinstitute.org/en/misk-art-week/Misk-art-week-2024/educational-programs/Documenting">Documenting the City Using Digital Tools</a></p>
-                <figure class="hidden-image-container">
-                    <img class="hidden-image" src="images/misk.gif">
-                </figure>
+                <p class="pcite-main "><a href="https://miskartinstitute.org/en/misk-art-week/Misk-art-week-2024/educational-programs/Documenting">Documenting the City Using Digital Tools <b>&#8599;</b></a></p>
+                <video class="hidden-image-container">
+                    <img class="hidden-image" src="images/misk.webm">
+                </video>
             </div>
 
             <div class="hidden-content-t">
@@ -83,7 +141,7 @@
             
 
             <p class="title-type courses">Course | BA Architecture, University of Hertfordshire, 2023-24</p>
-            <p class="pcite-main"><a href="courses/architecture-materiality-climate.html"><b>Architecture, Materiality and Climate &#10132;</b></a></p>
+            <p class="pcite-main"><a href="courses/architecture-materiality-climate.html"><b>Architecture, Materiality and Climate &#8594;</b></a></p>
             <figure class="hidden-image-container">
                 <img class="hidden-image" src="images/louis-kahn.webp">
                 <figcaption>National Assembly in Dhaka by Louis Kahn. Source: Foregemind Archimedia, Flickr</figcaption>
@@ -120,42 +178,46 @@
                 </div>
                 <input type="checkbox" id="ct-ro">
 
-                <p class="title-type projects">Research Project | University of Hertfordshire, 2025 - 2026</p>
-                <p class="pcite-main"><a href="/research/fire-safety.html"><b>Exploring Embedded Pedagogies for Fire Safety &#10132;</b></a></p>
+                <p class="title-type projects"></p>
+                <p class="title-type projects">Website | 2022 - </p>
+                <p class="pcite-main"><a href="https://konutcalismalari.github.io/"><b>Housing Studies in Turkey: A Bibliography &#8599;</b></a></p>
+                
+                <p class="title-type projects">Research Project | University of Hertfordshire, 2025 - </p>
+                <p class="pcite-main"><a href="/research/fire-safety.html"><b>Exploring Embedded Pedagogies for Fire Safety &#8594;</b></a></p>
                     <figure class="hidden-image-container">
                       <img class="hidden-image" src="images/fire-safety.webp">
                     </figure>
 
                 <p class="title-type projects">Research Project | Royal College of Art, 2021 - 2025</p>
-                <p class="pcite-main"><a href="https://www.housingstandardisation.com"><b>Housing Standardisation: The Architecture of Regulations and Design Standards</b></a></p>
+                <p class="pcite-main"><a href="https://www.housingstandardisation.com"><b>Housing Standardisation: The Architecture of Regulations and Design Standards  &#8599;</b></a></p>
                     <figure class="hidden-image-container">
-                      <img class="hidden-image" src="images/housing-standardisation.gif">
+                      <img class="hidden-image" src="images/housing-standardisation.webp">
                     </figure>
 
                 <div class="hidden-content-ro">
                     <p class="title-type outputs">Exhibition | Centre Obert d’Arquitectura, Barcelona, 11 February-23 March 2025</p>
-                    <p class="pcite-main"><a href="https://www.arquitectes.cat/ca/arquitectura/exposicio/housing-standardisation">Housing Standardisation</a></p>
+                    <p class="pcite-main"><a href="https://www.arquitectes.cat/ca/arquitectura/exposicio/housing-standardisation">Housing Standardisation <b>&#8599;</b></a></p>
                 </div>
 
                 <p class="title-type outputs">Exhibition | Building Centre, London, 14 November 2024 - 30 January 2025</p>
-                <p class="pcite-main"><a href="https://www.buildingcentre.co.uk/whats_on/exhibitions/housing-standardisation-who-designs-our-homes-and-how-do-we-live"><b>Housing Standardisation: Who Designs Our Homes and How Do We Live?</b></a></p>
+                <p class="pcite-main"><a href="https://www.buildingcentre.co.uk/whats_on/exhibitions/housing-standardisation-who-designs-our-homes-and-how-do-we-live"><b>Housing Standardisation: Who Designs Our Homes and How Do We Live?  &#8599;</b></a></p>
                 <figure class="hidden-image-container">
                     <img class="hidden-image" src="images/standards-exhibition.webp">
                 </figure>
 
                 <div class="hidden-content-ro">
                     <p class="title-type outputs">Exhibition | Asociación de Oficinas de Arquitectos, Santiago de Chile, 16-26 October 2024</p>
-                    <p class="pcite-main"><a href="https://www.aoa.cl/exposicion-vivienda-asequible/">Vivienda Asequible: Modelos Internacionales, Estandarización del Diseño y Experiencias Cotidianas</a></p>
+                    <p class="pcite-main"><a href="https://www.aoa.cl/exposicion-vivienda-asequible/">Vivienda Asequible: Modelos Internacionales, Estandarización del Diseño y Experiencias Cotidianas <b>&#8599;</b></a></p>
                 </div>
 
                 <p class="title-type outputs">Special Issue | Urban Planning, 2024</p>
-                <p class="pcite-main"><a href="https://doi.org/10.17645/up.i316"><b>Housing Norms and Standards: The Design of Everyday Life</b></a></p>
+                <p class="pcite-main"><a href="https://doi.org/10.17645/up.i316"><b>Housing Norms and Standards: The Design of Everyday Life &#8599;</b></a></p>
                 <figure class="hidden-image-container">
                     <img class="hidden-image" src="images/housing_norms.webp">
                 </figure>
 
                 <p class="title-type projects">Research Project | Royal College of Art, 2024</p>
-                <p class="pcite-main"><a href="https://researchonline.rca.ac.uk/5909/"><b>Responsible AI in Art and Design Higher Education</b></a></p>
+                <p class="pcite-main"><a href="https://researchonline.rca.ac.uk/5909/"><b>Responsible AI in Art and Design Higher Education &#8599;</b></a></p>
 
                 <div class="hidden-content-ro">
                     <p class="title-type projects">Research Project | Royal College of Art, 2024</p>
@@ -164,14 +226,14 @@
 
                 <div class="hidden-content-ro">
                     <p class="title-type outputs">Symposium | Architecture Foundation, 2024</p>
-                    <p class="pcite-main"><a href="https://architecturefoundation.org.uk/the-future-of-housing-standards"><b>The Future of Housing Standards</b></a></p>
+                    <p class="pcite-main"><a href="https://architecturefoundation.org.uk/the-future-of-housing-standards">The Future of Housing Standards <b>&#8599;</b></a></p>
 
                     <p class="title-type outputs">Conference Paper | Housing Studies Association Annual Conference, 2024</p>
-                    <p class="pcite-main"><a href="https://virtual.oxfordabstracts.com/event/public/4454/session/90925">Affordable housing models and housing designs: evidence from four European cities</a></p>
+                    <p class="pcite-main"><a href="https://virtual.oxfordabstracts.com/event/public/4454/session/90925">Affordable housing models and housing designs: evidence from four European cities <b>&#8599;</b></a></p>
                 </div>
                 
                 <p class="title-type outputs">Journal Article | Building Research & Information, 2023</p>
-                <p class="pcite-main"><a href="research/space-standards-in-affordable-housing.html"><b>Space standards in affordable housing in England &#10132;</b></p>
+                <p class="pcite-main"><a href="research/space-standards-in-affordable-housing.html"><b>Space standards in affordable housing in England &#8594;</b></p>
 
                 <div class="hidden-content-ro">
                     <p class="title-type outputs">Conference Paper | Housing Studies Association Annual Conference, 2022</p>
@@ -179,29 +241,29 @@
                 </div>
                 
                 <p class="title-type outputs">Journal Article | International Journal of Housing Policy, 2022</p>
-                <p class="pcite-main"><a href="https://doi.org/10.1080/19491247.2022.2147354"><b>Changing Socio-Spatial Definitions of Sufficiency of Home: Evidence from London (UK) before and during the Covid-19 Stay-at-Home Restrictions</b></a></p>
+                <p class="pcite-main"><a href="https://doi.org/10.1080/19491247.2022.2147354"><b>Changing Socio-Spatial Definitions of Sufficiency of Home: Evidence from London (UK) before and during the Covid-19 Stay-at-Home Restrictions &#8599;</b></a></p>
 
                 <p class="title-type outputs">Journal Article | Building Research & Information, 2022</p>
-                <p class="pcite-main"><a href="https://doi.org/10.1080/09613218.2022.2070452"><b>Dwelling Size and Usability in London: A Study of Floor Plan Data Using Machine Learning</b></a></p>
+                <p class="pcite-main"><a href="https://doi.org/10.1080/09613218.2022.2070452"><b>Dwelling Size and Usability in London: A Study of Floor Plan Data Using Machine Learning &#8599;</b></a></p>
                 
                 <p class="title-type outputs">Journal Article | Housing Studies, 2022</p>
-                <p class="pcite-main"><a href="https://doi.org/10.1080/02673037.2022.2045005"><b>The design of subsidized housing: towards an interdisciplinary and cross-national research agenda</b></a></p>
+                <p class="pcite-main"><a href="https://doi.org/10.1080/02673037.2022.2045005"><b>The design of subsidized housing: towards an interdisciplinary and cross-national research agenda &#8599;</b></a></p>
 
                 <p class="title-type outputs">Book Chapter | The Power of Sources in Architecture Research and Practice, 2022</p>
-                <p class="pcite-main"><a href="research/terraced-house.html"><b>Rebuilding the Terraced House: A Socio-spatial Exploration of Alterations &#10132;</a></b></p> 
+                <p class="pcite-main"><a href="research/terraced-house.html"><b>Rebuilding the Terraced House: A Socio-spatial Exploration of Alterations &#8594;</a></b></p> 
 
                 <div class="hidden-content-ro">
                     <p class="title-type">Research Project | Royal College of Art, 2021</p>
-                    <p class="pcite-main"><a href="https://ldml.org/wp-content/uploads/2025/02/London-Housing-Policy-Regulation-Typology-and-Dimensional-Data-LowRes.pdf">London Housing: Policy, Regulation, Typology and Dimensional Data</a></p>
+                    <p class="pcite-main"><a href="https://ldml.org/wp-content/uploads/2025/02/London-Housing-Policy-Regulation-Typology-and-Dimensional-Data-LowRes.pdf">London Housing: Policy, Regulation, Typology and Dimensional Data<b>&#8599;</b></a></p>
                     
                     <p class="title-type">PhD Dissertation | Royal College of Art, 2021</p>
-                    <p class="pcite-main"><a href="https://researchonline.rca.ac.uk/4839/">Interior Complex: Design standardization in London's housing</a></p>
+                    <p class="pcite-main"><a href="https://researchonline.rca.ac.uk/4839/">Interior Complex: Design standardization in London's housing<b>&#8599;</b></a></p>
 
                     <p class="title-type">Exhibition | Royal Academy of Arts, 2 February - 1 April 2019</p>
-                    <p class="pcite-main"><a href="https://www.royalacademy.org.uk/exhibition/invisible-landscapes">Invisible Landscapes: Home (Act I)</a></p>
+                    <p class="pcite-main"><a href="https://www.royalacademy.org.uk/exhibition/invisible-landscapes">Invisible Landscapes: Home (Act I)<b>&#8599;</b></a></p>
 
                     <p class="title-type">Exhibition | Manifesta, 16 June - 4 November 2018</p>
-                    <p class="pcite-main"><a href="https://researchonline.rca.ac.uk/3578/1/Islands%20of%20Exile_Leros_Booklet.pdf">Islands of Exile: The Case of Leros</a></p>
+                    <p class="pcite-main"><a href="https://researchonline.rca.ac.uk/3578/1/Islands%20of%20Exile_Leros_Booklet.pdf">Islands of Exile: The Case of Leros<b>&#8599;</b></a></p>
 
                     <p class="title-type outputs">Conference Paper | From Building to Continent: How Architecture makes Territories, 2018</p>
                     <p class="pcite-main">Designing Schools, Making Territories: Cartography of the Ford Foundation’s School Projects<em></em></p>
