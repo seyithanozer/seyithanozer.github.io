@@ -7,6 +7,7 @@
     <title>Seyithan Özer</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
     <link href="styles/style2.css" rel="stylesheet">
+   
     <!-- Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q2TJJ5ZTXG"></script>
     <script>
@@ -16,69 +17,6 @@
         gtag('config', 'G-Q2TJJ5ZTXG');
     </script>
     
-    <!-- Cookies -->
-    <link rel="stylesheet" id="silktide-consent-manager-css" href="cookie-banner/silktide-consent-manager.css">
-    <script src="cookie-banner/silktide-consent-manager.js"></script>
-    <script>
-    silktideCookieBannerManager.updateCookieBannerConfig({
-    background: {
-        showBackground: true
-    },
-    cookieIcon: {
-        position: "bottomRight"
-    },
-    cookieTypes: [
-        {
-        id: "necessary",
-        name: "Necessary",
-        description: "<p>These cookies are necessary for the website to function properly and cannot be switched off. They help with things like logging in and setting your privacy preferences.</p>",
-        required: true,
-        onAccept: function() {
-            console.log('Add logic for the required Necessary here');
-        }
-        },
-        {
-        id: "analytical",
-        name: "Analytical",
-        description: "<p>These cookies track which pages are most popular and how visitors move around the site.</p>",
-        required: false,
-        onAccept: function() {
-            gtag('consent', 'update', {
-            analytics_storage: 'granted',
-            });
-            dataLayer.push({
-            'event': 'consent_accepted_analytical',
-            });
-        },
-        onReject: function() {
-            gtag('consent', 'update', {
-            analytics_storage: 'denied',
-            });
-        }
-        }
-    ],
-    text: {
-        banner: {
-        description: "<p>I use cookies on this website to analyse traffic.</p>",
-        acceptAllButtonText: "Accept",
-        acceptAllButtonAccessibleLabel: "Accept all cookies",
-        rejectNonEssentialButtonText: "Reject",
-        rejectNonEssentialButtonAccessibleLabel: "Reject non-essential",
-        preferencesButtonText: "Preferences",
-        preferencesButtonAccessibleLabel: "Toggle preferences"
-        },
-        preferences: {
-        title: "Customise your cookie preferences",
-        description: "<p><span style=\"color: rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, Arial, sans-serif; font-size: 16px; letter-spacing: normal;\">You can choose not to allow analytics cookies. Your cookie preferences will apply across the website.</span></p>",
-        creditLinkText: "Source",
-        creditLinkAccessibleLabel: "Get this banner for free"
-        }
-    },
-    position: {
-        banner: "bottomCenter"
-    }
-    });
-    </script>
 </head>
 
 <body>
