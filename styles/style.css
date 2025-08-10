@@ -247,7 +247,7 @@ hr{
   margin-bottom: 2vh;
 }
 .ptext{
-  font-size: 100%;
+  font-size: 110%;
 }
 .ptext-bold{
   padding-top: 2vh;
@@ -263,7 +263,7 @@ hr{
 }
 .pcite{
   padding-left: 40px;
-  font-size: 90%;
+  font-size: 100%;
   color:#5D5D5D;
   padding-bottom: 0.5vh;
 }
