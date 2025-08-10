@@ -16,7 +16,7 @@ body {
 /*CONTAINER SETUP */
 .container-main {
   display: grid;
-  grid-template-columns: 30px 150px 50vw;
+  grid-template-columns: 30px 150px 40vw;
   align-items: start;
 }
 
@@ -241,7 +241,7 @@ hr{
 }
 
 .hr-main {
-  width: calc(30px + 150px + 50vw);
+  width: calc(30px + 150px + 40vw);
 }
 
 .ptext{
