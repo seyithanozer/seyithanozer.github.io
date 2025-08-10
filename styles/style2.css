@@ -19,16 +19,12 @@ body {
   display: flex;
 }
 
-.container-column-t {
+.container-column-t, 
+.container-column-ro  {
   padding-left: 0;
   padding-right: 30px;
   padding-top: 5vh;
-}
-
-.container-column-ro {
-  padding-left: 0;
-  padding-right: 30px;
-  padding-top: 5vh;
+  padding-bottom: 10px;
 }
 
 @media all and (max-width: 990px){
@@ -36,12 +32,7 @@ body {
       flex-direction: column;
       width: 100%;
   }
-  .container-column-ro {
-    width: 90%;
-    flex-grow: 0;
-    flex-shrink: 0;
-  }
-
+  .container-column-ro,
   .container-column-t {
     width: 90%;
     flex-grow: 0;
@@ -65,7 +56,7 @@ body {
       flex-grow: 0;
       flex-shrink: 0;
     }
-}
+  }
 
 /*FONTS SETUP */
 html {
