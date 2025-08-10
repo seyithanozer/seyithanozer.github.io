@@ -1,7 +1,6 @@
 /* and */
 /*fonts styling */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
 /*background, padding */
 * {
   margin:0;
@@ -11,52 +10,48 @@ body {
   height: 100%;
   background-color: #f0f0f0;
   margin-left: 30px;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 /*CONTAINER SETUP */
 .container-main {
-  display: flex;
+  display: grid;
+  grid-template-columns: 30px 150px 50vw;
+  align-items: start;
 }
 
-.container-column-t, 
-.container-column-ro  {
-  padding-left: 0;
-  padding-right: 30px;
-  padding-top: 5vh;
-  padding-bottom: 10px;
+.col-1,
+.col-2 {
+  position: sticky;
+  top: 80px; 
+  z-index: 500;
+  align-self: start;
 }
+
+.hr-main {
+  width: calc(30px + 150px + 50vw);
+}
+
 
 @media all and (max-width: 990px){
   .container-main {
-      flex-direction: column;
-      width: 100%;
+    grid-template-columns: 1fr;
   }
-  .container-column-ro,
-  .container-column-t {
-    width: 90%;
-    flex-grow: 0;
-    flex-shrink: 0;
+
+  .col-1,
+  .col-2 {
+    position: unset;
   }
+
+  .col-1,
+  .col-2,
+  .col-3,
+  .hr-main {
+    width: 80vw;
+  }
+
 }
 
-@media all and (min-width: 990px) {
-    .container-main {
-        flex-direction: row;
-    }
-    
-    .container-column-ro {
-      flex-basis: 530px;
-      flex-grow: 0;
-      flex-shrink: 0;
-    }
-  
-    .container-column-t {
-      flex-basis: 400px;
-      flex-grow: 0;
-      flex-shrink: 0;
-    }
-  }
 
 /*FONTS SETUP */
 html {
@@ -108,13 +103,20 @@ a:active {
   text-decoration: none;
 }
 
+.more:hover {
+  color:#F07167 !important;
+}
 
 /* HOME PAGE FONTS */
 .main-header {
+  position: sticky;
+  top: 0px;
   color: black;
   font-size: 150%;
-  padding-top: 0vh;
-  padding-bottom: 1vh;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #f0f0f0;
+  z-index: 1000;
 }
 
 /* SECTION TITLES */
@@ -135,7 +137,7 @@ a:active {
 
 /* PCITE */
 .pcite-main{
-  font-size: 100%;
+  font-size: 110%;
   color:black;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   padding-bottom: 0.5vh;
@@ -237,6 +239,11 @@ hr{
   margin-top: 3vh;
   margin-bottom: 2vh;
 }
+
+.hr-main {
+  width: calc(30px + 150px + 50vw);
+}
+
 .ptext{
   font-size: 100%;
 }
