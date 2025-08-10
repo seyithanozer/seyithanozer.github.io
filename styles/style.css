@@ -16,7 +16,7 @@ body {
 }
 @media (max-width: 999px) {
   body {
-    width: 90vw;
+    width: 80vw;
   }
   
   .sidenote, .sidenote-main .figure-content{
@@ -31,7 +31,7 @@ body {
   
 @media (min-width: 1000px) {
   body {
-    width: 45vw;
+    width: calc(30px + 150px + 40vw);
   }
   html {
     font-size: 1rem;
@@ -41,9 +41,9 @@ body {
     position: relative;
     float: right;
     clear: right;
-    margin-right: -32vw;
+    margin-right: -25vw;
     text-align: left;
-    width: 30vw;
+    width: 20vw;
     margin-top: -0.1rem;
     margin-bottom: 1rem;
   }
@@ -53,22 +53,9 @@ body {
     position: relative;
     float: right;
     clear: right;
-    margin-right: -32vw;
+    margin-right: -25vw;
     text-align: left;
-    width: 30vw;
-    margin-top: -0.1rem;
-    margin-bottom: 1rem;
-
-  }
-
-  .sidenote-main {
-    font-size: 80%;
-    position: relative;
-    float: right;
-    clear: right;
-    margin-right: -32vw;
-    text-align: left;
-    width: 30vw;
+    width: 20vw;
     margin-top: -0.1rem;
     margin-bottom: 1rem;
   }
