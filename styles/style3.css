@@ -29,18 +29,20 @@ body {
 }
 
 .hr-main {
-  width: calc(30px + 150px + 50vw);
+  width: calc(30px + 150px + 40vw);
 }
 
 
-@media all and (max-width: 990px){
+@media (max-width: 990px){
   .container-main {
     grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 80vw;
   }
 
   .col-1,
   .col-2 {
-    position: unset;
+    position: static;
   }
 
   .col-1,
@@ -238,10 +240,6 @@ hr{
   border: 1.5px solid black;
   margin-top: 3vh;
   margin-bottom: 2vh;
-}
-
-.hr-main {
-  width: calc(30px + 150px + 40vw);
 }
 
 .ptext{
