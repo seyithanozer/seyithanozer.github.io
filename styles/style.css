@@ -18,15 +18,12 @@ body {
   body {
     width: 80vw;
   }
-  
   .sidenote, .sidenote-main .figure-content{
     display: none;
   }
-
   figcaption, .hidden-image{
     visibility: hidden;
   }
-
   }
   
 @media (min-width: 1000px) {
@@ -60,7 +57,6 @@ body {
     margin-bottom: 1rem;
   }
 }
-
 
 /*FONTS SETUP */
 html {
@@ -465,7 +461,6 @@ body {
     left: 0;
     height: auto;
     width: 100%;
-    /* REMOVE display: flex here! */
     flex-direction: column;
   }
 }
@@ -477,4 +472,45 @@ body {
   font-size: 30px;
   color: black;
   cursor: pointer;
+}
+
+
+/* RESOURCE PAGE */
+
+.resource-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+  height: 75vh;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+
+.resource-grid-item {
+  color:#F07167;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;  /* horizontal centering */
+  align-items: center;      /* vertical centering */
+  text-align: center;       /* center multiline text */
+  padding: 10px;            
+  word-wrap: break-word;    /* force wrapping */
+  overflow-wrap: break-word;
+  background-size: cover;
+  background-position: center;
+}
+
+.resource-grid-item:hover {
+  background-color: #ddd;
+}
+
+.resource-grid-item.active {
+  background-color: #ddd;
+}
+
+.resource-figure {
+  padding: 0;
+  margin: 0;
+  width: 300px;
 }
