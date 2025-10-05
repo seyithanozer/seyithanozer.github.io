@@ -252,6 +252,7 @@ hr{
 }
 .pcite > a {
   color: #5D5D5D;
+  text-decoration: underline;
 }
 
 .title-content{
