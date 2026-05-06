@@ -1,310 +1,389 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <title>Seyithan Özer</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
-    <link href="styles/style3.css" rel="stylesheet">
-   
-   <!-- Analytics -->
-    <script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Seyithan Özer</title>
+
+  <meta name="description" content="Seyithan Özer is an architecture researcher and educator working on housing standards, design governance, and architectural pedagogy.">
+  <link rel="canonical" href="https://www.seyithanozer.com/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Seyithan Özer">
+  <meta property="og:description" content="Architecture researcher and educator working on housing standards, design governance, and architectural pedagogy.">
+  <meta property="og:url" content="https://www.seyithanozer.com/">
+
+  <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
+  <link href="styles/style3.css" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Seyithan Özer",
+    "url": "https://www.seyithanozer.com",
+    "email": "seyithan@seyithanozer.com",
+    "jobTitle": "Architecture Researcher and Educator",
+    "knowsAbout": ["Housing Design", "Design Standards", "Space Standards", "Architectural Pedagogy"]
+  }
+  </script>
+
+  <script>
     function loadAnalytics() {
-        var s = document.createElement('script');
-        s.async = true;
-        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-Q2TJJ5ZTXG';
-        document.head.appendChild(s);
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        window.gtag = gtag;
-        gtag('js', new Date());
-        gtag('config', 'G-Q2TJJ5ZTXG');
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-Q2TJJ5ZTXG';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      window.gtag = gtag;
+      gtag('js', new Date());
+      gtag('config', 'G-Q2TJJ5ZTXG');
     }
-    </script>
-    
+  </script>
 </head>
 
-<body>
+<body data-view="list">
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <!--list view-->
+      <symbol id="icon-list" viewBox="0 0 16 16">
+        <path d="M 0 4 H 16 M 0 8 H 16 M 0 12 H 16"
+              stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="butt"/>
+      </symbol>
+      <!--pilcrow-->
+      <symbol id="icon-prose" viewBox="0 0 16 16">
+        <path d="M 12 1 V 15 M 8 1 V 15 M 12 1 H 5.5 a 3.5 3.5 0 0 0 0 7 H 8"
+              stroke="currentColor" stroke-width="1.6" fill="none"
+              stroke-linecap="butt" stroke-linejoin="miter"/>
+      </symbol>
+    </defs>
+  </svg>
 
-    <main>
+  <main>
 
-        <!--Header-->
-        <p class="main-header"><b><a href="index.html">Seyithan Özer</a></b></p>
+    <!-- ===== HEADER WITH VIEW TOGGLE ===== -->
+    <div class="header-row">
+      <h1 class="main-header"><a href="index.html">Seyithan Özer</a></h1>
+      
+      <div class="view-toggle" role="group" aria-label="View mode">
+        <button type="button" class="view-toggle__btn is-active" data-view-set="list" aria-label="List view" aria-pressed="true">
+          <svg class="view-toggle__icon"><use href="#icon-list"/></svg>
+        </button>
+        <span class="view-toggle__sep" aria-hidden="true">/</span>
+        <button type="button" class="view-toggle__btn" data-view-set="prose" aria-label="Prose view" aria-pressed="false">
+          <svg class="view-toggle__icon"><use href="#icon-prose"/></svg>
+        </button>
+      </div>
 
-        <hr class="hr-main">
+    </div>
 
-        <div class="container-main">
-            <div class="col col-1">
-                <p class="title-type projects"></p>
-                <svg class="symbols" width="20" height="20"><circle id="scircle" cx="10" cy="10" r="10" fill="black" /></svg>
-            </div>
-            <div class="col col-2">
-                <p class="title-type projects"></p>
-                <p class="pcite-main"><b>RESEARCH</b></p>
-            </div>
-            <div class="col col-3">
-                <input type="checkbox" id="ct-ro">
-                <!--
-                <br><br>
-                <svg class="symbols" width="20" height="15">
-                    <circle id="scircle" cx="5" cy="10" r="5" fill="black" />
-                </svg>              
-                <p class="title-type projects">Research Project | University of Hertfordshire, 2025 - </p>
-                <p class="pcite-main">Low-Carbon Housing Futures: Engaging Residents through Visual Artefacts</p>-->
+    <hr class="hr-main">
 
-                <!--Housing Standardisation-->
-                <br>
-                <svg class="symbols" width="20" height="15">
-                    <circle id="scircle" cx="5" cy="10" r="5" fill="black" />
-                </svg>
-                <p class="title-type outputs">2026 | Book Chapters in </p>
-                <p class="pcite-main"><a href="https://www.routledge.com/Housing-Standardisation-and-Design-Governance/Jacoby-Arancibia/p/book/9781032672533"><b><em>Housing Standardisation and Design Governance</em> &#8599;&#xfe0e;</b></a></p>
+    <!-- ===== RESEARCH ===== -->
+    <div class="container-main">
+      <div class="col col-1">
+        <span class="dot dot--lg"><svg><use href="#dot-lg"/></svg></span>
+      </div>
+      <div class="col col-2">
+        <h2 class="section-label">Research</h2>
+      </div>
+      <div class="col col-3">
 
-                
+        <!-- ===== CLUSTER: Housing Standardisation ===== -->
+        <section class="cluster" id="cluster-housing-standardisation">
+          <header class="cluster-head">
+            <span class="cluster-name"><a href="https://www.housingstandardisation.com">Housing Standardisation</a><span class="arr">&#8599;&#xfe0e;</span></span>
+          </header>
 
-                <div class="hidden-content-ro">
-                    <p class="title-type outputs">2026| Exhibition at Farrell Centre, Newcastle</p>
-                    <p class="pcite-main"><a href="https://www.farrellcentre.org.uk/whats-on/housing-standardisation/">Housing Standardisation <b>&#8599;&#xfe0e;</b></a></p>
-                    
-                    <p class="title-type outputs">2025| Exhibition at Centre Obert d’Arquitectura, Barcelona</p>
-                    <p class="pcite-main"><a href="https://www.arquitectes.cat/ca/arquitectura/exposicio/housing-standardisation">Housing Standardisation <b>&#8599;&#xfe0e;</b></a></p>
-                
-                    <p class="title-type outputs">2025 | Exhibition at Building Centre, London</p>
-                    <p class="pcite-main"><a href="https://www.buildingcentre.co.uk/whats_on/exhibitions/housing-standardisation-who-designs-our-homes-and-how-do-we-live">Housing Standardisation: Who Designs Our Homes and How Do We Live?  &#8599;&#xfe0e;</a></p>
+          <div class="cluster-body cluster-body--list">
+            <p class="meta">2026</p>
+            <p class="entry">
+              <span class="kind">Chapters in</span>
+              <b><em><a href="https://...">Housing Standardisation and Design Governance</a></em></b><span class="arr">&#8599;&#xfe0e;</span>
+            </p>
+          
+            <p class="meta">2024–26</p>
+            <p class="entry">
+              <span class="kind">Exhibition</span>
+              <span class="artefact"><em>Housing Standardisation</em></span><span class="kind">, shown at</span>
+              <a href="https://www.farrellcentre.org.uk/whats-on/housing-standardisation/">Farrell Centre, Newcastle</a><span class="arr">&#8599;&#xfe0e;</span><span class="kind">,</span>
+              <a href="https://www.arquitectes.cat/ca/arquitectura/exposicio/housing-standardisation">Centre Obert d&rsquo;Arquitectura, Barcelona</a><span class="arr">&#8599;&#xfe0e;</span><span class="kind">,</span>
+              <a href="https://www.buildingcentre.co.uk/whats_on/exhibitions/housing-standardisation-who-designs-our-homes-and-how-do-we-live">Building Centre, London</a><span class="arr">&#8599;&#xfe0e;</span>
+              <span class="kind">and</span>
+              <a href="https://www.aoa.cl/exposicion-vivienda-asequible/">Asoc. de Oficinas de Arquitectos, Santiago de Chile</a><span class="arr">&#8599;&#xfe0e;</span>
+            </p>
 
-                    <p class="title-type outputs">2024 | Exhibition at Asociación de Oficinas de Arquitectos, Santiago de Chile</p>
-                    <p class="pcite-main"><a href="https://www.aoa.cl/exposicion-vivienda-asequible/">Vivienda Asequible: Modelos Internacionales, Estandarización del Diseño y Experiencias Cotidianas <b>&#8599;&#xfe0e;</b></a></p>
-                </div>
-                
-                <p class="title-type outputs">2024 | Special Issue for <em>Urban Planning</em></p>
-                <p class="pcite-main"><a href="https://doi.org/10.17645/up.i316"><b>Housing Norms and Standards: The Design of Everyday Life &#8599;&#xfe0e;</b></a></p>
-                
-                <p class="title-type outputs">2023 | Article in <em>Building Research & Information</em></p>
-                <p class="pcite-main"><a href="research/space-standards-in-affordable-housing.html"><b>Space standards in affordable housing in England &#8594;</b></a></p>
-                
-                <p class="title-type outputs">2022 | Article in <em>Housing Studies</em></p>
-                <p class="pcite-main"><a href="https://doi.org/10.1080/02673037.2022.2045005"><b>The design of subsidized housing: towards an interdisciplinary and cross-national research agenda &#8599;&#xfe0e;</b></a></p>
-
-                <p class="title-type projects">2021-2025 | Research Project</p>
-                <p class="pcite-main"><a href="https://www.housingstandardisation.com"><b>Housing Standardisation: The Architecture of Regulations and Design Standards  &#8599;&#xfe0e;</b></a></p>
-
-                <div class="hidden-content-ro">
-                    <p class="title-type">2019-2021 | Research Project</p>
-                    <p class="pcite-main"><a href="https://ldml.org/wp-content/uploads/2025/02/London-Housing-Policy-Regulation-Typology-and-Dimensional-Data-LowRes.pdf">London Housing: Policy, Regulation, Typology and Dimensional Data<b>&#8599;&#xfe0e;</b></a></p>
-                </div>
-
-                <div class="menu-container">
-                    <div class="tooltip">
-                        <label for="ct-ro">
-                            <svg class = "more" width="20" height="20">
-                                 <path d="M 8 4 H 12 V 8 H 16 V 12 H 12 V 16 H 8 V 12 H 4 V 8 H 8 Z" fill="black" />
-                            </svg>
-                        </label>
-                    </div>
-                </div>
-
-                
-                <!--PhD-->
-                <br><br>
-                <svg class="symbols" width="20" height="15">
-                    <circle id="scircle" cx="5" cy="10" r="5" fill="black" />
-                </svg>
-
-                <p class="title-type outputs">2026 | Chapter in <em>The Power of Sources in Architecture Research and Practice</em></p>
-                <p class="pcite-main"><a href="research/terraced-house.html"><b>Data of Alteration: A Databased Exploration of Terraced House Alterations &#8594;</a></b></p> 
-
-                <p class="title-type outputs">2022 | Article in <em>International Journal of Housing Policy</em></p>
-                <p class="pcite-main"><a href="https://doi.org/10.1080/19491247.2022.2147354"><b>Changing Socio-Spatial Definitions of Sufficiency of Home: Evidence from London (UK) before and during the Covid-19 Stay-at-Home Restrictions &#8599;&#xfe0e;</b></a></p>
-
-                <p class="title-type outputs">2022 | Article in <em>Building Research & Information</em></p>
-                <p class="pcite-main"><a href="https://doi.org/10.1080/09613218.2022.2070452"><b>Dwelling Size and Usability in London: A Study of Floor Plan Data Using Machine Learning &#8599;&#xfe0e;</b></a></p>
-
-                <p class="title-type"> 2021 | PhD Dissertation</p>
-                <p class="pcite-main"><a href="https://researchonline.rca.ac.uk/4839/"><b>Interior Complex: Design standardization in London's housing<b>&#8599;&#xfe0e;</b></a></p>
-
-
-                <!--Pedagogy-->
-                <br><br>
-                <svg class="symbols" width="20" height="15">
-                    <circle id="scircle" cx="5" cy="10" r="5" fill="black" />
-                </svg>
-                <p class="title-type projects">2025- | Research Project</p>
-                <p class="pcite-main"><a href="/research/fire-safety.html"><b>Exploring Embedded Pedagogies for Fire Safety &#8594;</b></a></p>
-                
-                <p class="title-type projects">2024 | Research Project</p>
-                <p class="pcite-main"><a href="https://researchonline.rca.ac.uk/5909/"><b>Responsible AI in Art and Design Higher Education &#8599;&#xfe0e;</b></a></p>
-
-                <br><br>
-                <svg class="symbols" width="20" height="15">
-                    <circle id="scircle" cx="5" cy="10" r="5" fill="black" />
-                </svg>
-                <p class="title-type projects"></p>
-                <p class="pcite-main"><a href="https://konutcalismalari.github.io/"><b>Housing Studies in Turkey: A Bibliography &#8599;&#xfe0e;</b></a></p>
-
-
-
-                
-
-            </div>
-        </div>
-
-                <hr class="hr-main">
-
-        <div class="container-main">
-            <div class="col col-1">
-                <p class="title-type projects"></p>
-                <svg class="symbols" width="20" height="20"><circle id="scircle" cx="10" cy="10" r="10" fill="black" /></svg>
-            </div>
-            <div class="col col-2">
-                <p class="title-type projects"></p>
-                <p class="pcite-main"><b>TEACHING</b></p>
-            </div>
-            <div class="col col-3">
-                <input type="checkbox" id="ct-t">
-
-                <!--Housing-->
-                <br>
-                <p class="title-type courses">
-                    <svg class="symbols" width="20" height="15">
-                        <circle id="scircle" cx="5" cy="10" r="5" fill="black" />
-                    </svg>
-                Housing and Housing Design
-                </p>
-
-                <p class="title-type courses">2023-2026 | Research Studio</p>
-                <p class="pcite-main "><a href="courses/quantifying-space-valuing-design.html"><b>Quantifying Space, Valuing Design &#8594;</b></a></p>
-
-                <p class="title-type courses">2023-2025 | Research Studio</p>
-                <p class="pcite-main "><a href="courses/data-in-housing.html"><b>Evidence-based Housing Design &#8594;</b></a></p>
-                
-                <p class="title-type courses">2024-2026 | Design Studio</p>
-                <p class="pcite-main"><a href="courses/lee-edge.html"><b>The Everyday Waterfront: Reimagining Housing at the Lee Edge &#8594;</b></a></p>
-
-                <div class="hidden-content-t">
-                    <p class="title-type courses">2024 | Masterclass</p>
-                    <p class="pcite-main "><a href="https://miskartinstitute.org/en/misk-art-week/Misk-art-week-2024/educational-programs/Documenting">Documenting the City Using Digital Tools <b>&#8599;&#xfe0e;</b></a></p>
-                </div>
+            <p class="meta">2024</p>
+            <p class="entry">
+              <span class="kind">Article in</span>
+              <em><a href="research/space-standards-in-affordable-housing.html">Building Research & Information</a><span class="arr">&#8599;&#xfe0e;</span></em><span class="kind">:</span>
+              <span class="artefact"><a href="research/space-standards.html">Space standards in affordable housing in England<span class="arr">&#8594;</span></a></span>
+            </p>
             
-                <!--CCS-->
-                
-                
-                <br><br>
-                
-                <p class="title-type courses">
-                    <svg class="symbols" width="20" height="15">
-                        <circle id="scircle" cx="5" cy="10" r="5" fill="black" />
-                    </svg>
-                Modernity and Climate
-                </p>
-                
-                <p class="title-type courses">2023-2026 | Critical & Contextual Studies</p>
-                <p class="pcite-main"><a href="courses/constructing-modernity.html"><b>Constructing Modernity &#8594;</b></a></p>
+            <p class="meta">2024</p>
+            <p class="entry">
+              <span class="kind">Special issue for</span>
+              <em><a href="https://doi.org/10.17645/up.i316">Urban Planning</a><span class="arr">&#8599;&#xfe0e;</span></em><span class="kind">:</span>
+              <span class="artefact">Housing Norms and Standards: The Design of Everyday Life</span>
+            </p>
 
-                <p class="title-type courses">2023-2026 | Critical & Contextual Studies</p>
-                <p class="pcite-main"><a href="courses/industrial-vernacular.html"><b>The Industrial and the Vernacular &#8594;</b></a></p>
-                
-                <p class="title-type courses">2025-2026 | Critical & Contextual Studies</p>
-                <p class="pcite-main"><a href="courses/experiencing-modernity.html"><b>Experiencing Modernity and Its Limits &#8594;</b></a></p>
 
-                <p class="title-type courses">2025-2026 | Design Studio</p>
-                <p class="pcite-main">Earthlab: A Centre for Rammed Earth Construction</p>
+            <p class="meta">2022</p>
+            <p class="entry">
+              <span class="kind">Article in</span>
+              <em><a href="https://doi.org/10.1080/02673037.2022.2045005">Housing Studies</a><span class="arr">&#8599;&#xfe0e;</span></em><span class="kind">:</span>
+              <span class="artefact">The design of subsidized housing: towards an interdisciplinary and cross-national research agenda</span>
+            </p>
 
-                <div class="menu-container">
-                    <div class="tooltip">
-                        <label for="ct-t">
-                            <svg class = "more" width="20" height="20">
-                                 <path d="M 8 4 H 12 V 8 H 16 V 12 H 12 V 16 H 8 V 12 H 4 V 8 H 8 Z" fill="black" />
-                            </svg>
-                        </label>
-                    </div>
-                </div>
+            <p class="meta">2019–21</p>
+            <p class="entry">
+              <span class="kind">Report:</span>
+              <em><a href="https://ldml.org/wp-content/uploads/2025/02/London-Housing-Policy-Regulation-Typology-and-Dimensional-Data-LowRes.pdf">London Housing: Policy, Regulation, Typology and Dimensional Data</a><span class="arr">&#8599;&#xfe0e;</span></em>
+            </p>
 
-            </div>
-        </div>
 
-        <hr class="hr-main">
 
-        <div class="container-main">
-            <div class="col col-1">
-                <p class="title-type projects"></p>
-                <svg class="symbols" width="20" height="20"><circle id="scircle" cx="10" cy="10" r="10" fill="black" /></svg>
-            </div>
-            <div class="col col-2">
-                <p class="title-type projects"></p>
-                <p class="pcite-main"><b>RESOURCES</b></p>
-            </div>
-            <div class="col col-3">
-                <input type="checkbox" id="ct-t">
 
-                <p class="title-type courses"></p>
-                <p class="pcite-main "><b><a href="/resources/pgcert.html">Some Notes on Teaching Architecture &#8594;</a></b></p>
+          </div>
 
-            </div>
-        </div>
+          <div class="cluster-body cluster-body--prose">
+            <!-- PROSE SLOT  -->
+          </div>
+        </section>
 
-        <hr class="hr-main">
+        <!-- ===== CLUSTER: Doctoral Research ===== -->
+        <section class="cluster" id="cluster-doctoral">
+          <header class="cluster-head">
+            <span class="cluster-name"><a href="https://researchonline.rca.ac.uk/4839/">Doctoral Research</a><span class="arr">&#8599;&#xfe0e;</span></span>
+          </header>
 
-        <div class="container-main">
-            <div class="col col-1">
-                <svg class="symbols" width="20" height="20"><circle id="scircle" cx="10" cy="10" r="10" fill="black" /></svg>
-            </div>
-            <div class="col col-2">
-                <p class="pcite-main"><b><a href="mailto:seyithan@seyithanozer.com">CONTACT</a></b></p></p>
-            </div>
-            <div class="col col-3">
-            </div>
-        </div>
+          <div class="cluster-body cluster-body--list">
+            <p class="meta">2024</p>
+            <p class="entry">
+              <span class="kind">Chapter in</span>
+              <em><a href="">The Power of Sources in Architecture Research and Practice</a><span class="arr">&#8599;&#xfe0e;</span></em>
+              <span class="kind">:</span>
+              <span class="artefact"><a href="research/terraced-house.html">Data of Alteration: A Databased Exploration of Terraced House Alterations<span class="arr">&#8594;</span></a></span>
+            </p>
 
-        <hr class="hr-main">
-        <p class="title-type">This page emits <a href="https://digitalbeacon.co/report/seyithanozer-com">0.068 g of CO₂ per visit<b>&#8599;&#xfe0e;</b></a>.</p>
-        <br><br>
-    </main>
-<!-- Cookie consent banner -->
-<div id="cookie-banner" style="
-  display: none;
-  position: fixed;
-  bottom: 0; left: 0; right: 0;
-  background: #f0f0f0;
-  border-top: none;
-  padding: 14px 20px;
-  font-family: inherit;
-  font-size: 13px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  flex-wrap: wrap;
-  z-index: 999;
-">
-  <p style="margin: 0; color: #555; flex: 1; min-width: 200px; line-height: 1.5;">
-    This site uses cookies to analyse traffic via Google Analytics. By continuing, you consent to their use.
-  </p>
-  <div style="display: flex; gap: 8px;">
-    <button onclick="declineCookies()" style="padding: 7px 16px; font-size: 13px; border: 1px solid black; background: transparent; cursor: pointer;">Decline</button>
-    <button onclick="acceptCookies()" style="padding: 7px 16px; font-size: 13px; border: 1px solid black; background: #000; color: #fff; cursor: pointer;">Accept</button>
+            <p class="meta">2022</p>
+            <p class="entry">
+              <span class="kind">Article in</span>
+              <em><a href="https://doi.org/10.1080/19491247.2022.2147354">International Journal of Housing Policy</a><span class="arr">&#8599;&#xfe0e;</span></em><span class="kind">:</span>
+              <span class="artefact">Changing Socio-Spatial Definitions of Sufficiency of Home: Evidence from London (UK) before and during the Covid-19 Stay-at-Home Restrictions</span>
+            </p>
+             
+            <p class="meta">2022</p>
+            <p class="entry">
+              <span class="kind">Article in</span>
+              <em><a href="https://doi.org/10.1080/09613218.2022.2070452">Building Research & Information</a><span class="arr">&#8599;&#xfe0e;</span></em><span class="kind">:</span>
+              <span class="artefact">Dwelling Size and Usability in London: A Study of Floor Plan Data Using Machine Learning</span>
+            </p>
+               
+          </div>
+
+          <div class="cluster-body cluster-body--prose">
+            <!-- PROSE SLOT -->
+          </div>
+        </section>
+
+        <!-- ===== CLUSTER: Pedagogy ===== -->
+        <section class="cluster" id="cluster-pedagogy">
+          <header class="cluster-head">
+            <span class="cluster-name">Pedagogy</span>
+          </header>
+
+          <div class="cluster-body cluster-body--list">
+
+            <p class="meta">2024</p>
+            <p class="entry">
+              <span class="kind">Report:</span>
+              <span class="artefact"><em><a href="https://researchonline.rca.ac.uk/5909/">Responsible AI in Art and Design Higher Education<span class="arr">&#8599;&#xfe0e;</span></a></em></span>
+            </p>
+
+          </div>
+
+          <div class="cluster-body cluster-body--prose">
+            <!-- PROSE SLOT -->
+          </div>
+        </section>
+
+         <!-- ===== CLUSTER: Konut Calismalari ===== -->
+        <section class="cluster" id="cluster-turkey">
+          <header class="cluster-head">
+            <span class="cluster-name"><a href="https://konutcalismalari.github.io/">Housing Studies in Turkey: A Bibliography</a><span class="arr">&#8599;&#xfe0e;</span></span>
+          </header>
+
+          <div class="cluster-body cluster-body--list">
+          </div>
+
+          <div class="cluster-body cluster-body--prose">
+            <!-- PROSE SLOT -->
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <hr class="hr-main">
+
+    <!-- ===== TEACHING ===== -->
+    <div class="container-main">
+      <div class="col col-1">
+        <span class="dot dot--lg"><svg><use href="#dot-lg"/></svg></span>
+      </div>
+      <div class="col col-2">
+        <h2 class="section-label">Teaching</h2>
+      </div>
+      <div class="col col-3">
+
+        <!-- ===== CLUSTER: Housing and Housing Design ===== -->
+        <section class="cluster" id="cluster-housing-teaching">
+          <header class="cluster-head">
+            <span class="cluster-name">Housing and Housing Design</span>
+          </header>
+
+          <div class="cluster-body cluster-body--list">
+
+            <p class="meta">2025–26</p>
+            <p class="entry">
+              <span class="kind">Research studio</span>
+              <span class="artefact"><a href="courses/quantifying-space-valuing-design.html">Quantifying Space, Valuing Design<span class="arr">&#8594;</span></a></span>
+            </p>
+
+            <p class="meta">2023–25</p>
+            <p class="entry">
+              <span class="kind">Research studio</span>
+              <span class="artefact"><a href="courses/data-in-housing.html">Evidence-based Housing Design<span class="arr">&#8594;</span></a></span>
+            </p>
+
+            <p class="meta">2024–26</p>
+            <p class="entry">
+              <span class="kind">Design studio</span>
+              <span class="artefact"><a href="courses/lee-edge.html">The Everyday Waterfront: Reimagining Housing at the Lee Edge<span class="arr">&#8594;</span></a></span>
+            </p>
+
+          </div>
+
+          <div class="cluster-body cluster-body--prose">
+            <!-- PROSE SLOT -->
+          </div>
+        </section>
+
+        <!-- ===== CLUSTER: Modernity and Climate ===== -->
+        <section class="cluster" id="cluster-modernity">
+          <header class="cluster-head">
+            <span class="cluster-name">Modernity and Climate</span>
+          </header>
+
+          <div class="cluster-body cluster-body--list">
+            
+            <p class="meta">2023–26</p>
+            <p class="entry">
+              <span class="kind">Critical & Contextual Studies</span>
+              <span class="artefact"><a href="courses/constructing-modernity.html">Constructing Modernity<span class="arr">&#8594;</span></a></span><span>, </span><span class="artefact"><a href="courses/industrial-vernacular.html">The Industrial and the Vernacular<span class="arr">&#8594;</span></a></span><span>, and </span>
+              <span class="artefact"><a href="courses/experiencing-modernity.html">Experiencing Modernity and Its Limits<span class="arr">&#8594;</span></a></span>
+            </p>
+
+            <p class="meta">2025–26</p>
+            <p class="entry">
+              <span class="kind">Design Studio</span>
+              <span class="artefact">Earthlab: A Centre for Rammed Earth Construction</span>
+            </p>
+          </div>
+
+          <div class="cluster-body cluster-body--prose">
+            <!-- PROSE SLOT -->
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <hr class="hr-main">
+
+    <!-- ===== RESOURCES ===== -->
+    <div class="container-main">
+      <div class="col col-1">
+        <span class="dot dot--lg"><svg><use href="#dot-lg"/></svg></span>
+      </div>
+      <div class="col col-2">
+        <h2 class="section-label">Resources</h2>
+      </div>
+      <div class="col col-3">
+        <p class="entry">
+          <span class="artefact"><a href="resources/pgcert.html">Some Notes on Teaching Architecture</a><span class="arr">&#8594;</span></span>
+        </p>
+      </div>
+    </div>
+
+    <hr class="hr-main">
+
+    <!-- ===== CONTACT ===== -->
+    <div class="container-main">
+      <div class="col col-1">
+        <span class="dot dot--lg"><svg><use href="#dot-lg"/></svg></span>
+      </div>
+      <div class="col col-2">
+        <h2 class="section-label"><a href="mailto:seyithan@seyithanozer.com">Contact</a></h2>
+      </div>
+      <div class="col col-3"></div>
+    </div>
+
+    <hr class="hr-main">
+
+    <p class="meta">This page emits <a href="https://digitalbeacon.co/report/seyithanozer-com">0.068 g of CO&#8322; per visit<span class="arr">&#8599;&#xfe0e;</span></a>.</p>
+    <br><br>
+
+  </main>
+
+  <!-- ===== COOKIE CONSENT ===== -->
+  <div id="cookie-banner" role="region" aria-label="Cookie consent">
+    <p>This site uses cookies to analyse traffic via Google Analytics. By continuing, you consent to their use.</p>
+    <div class="cb-actions">
+      <button type="button" class="cb-btn" onclick="declineCookies()">Decline</button>
+      <button type="button" class="cb-btn cb-btn--primary" onclick="acceptCookies()">Accept</button>
+    </div>
   </div>
-</div>
 
-<script>
-  var banner = document.getElementById('cookie-banner');
-  var consent = localStorage.getItem('cookie-consent');
+  <script>
+    // Cookie banner
+    (function () {
+      var banner = document.getElementById('cookie-banner');
+      var consent = localStorage.getItem('cookie-consent');
+      if (consent === 'accepted') loadAnalytics();
+      else if (!consent) banner.classList.add('is-visible');
 
-  if (consent === 'accepted') {
-    loadAnalytics();
-  } else if (!consent) {
-    banner.style.display = 'flex';
-  }
+      window.acceptCookies = function () {
+        localStorage.setItem('cookie-consent', 'accepted');
+        banner.classList.remove('is-visible');
+        loadAnalytics();
+      };
+      window.declineCookies = function () {
+        localStorage.setItem('cookie-consent', 'declined');
+        banner.classList.remove('is-visible');
+      };
+    })();
 
-  function acceptCookies() {
-    localStorage.setItem('cookie-consent', 'accepted');
-    banner.style.display = 'none';
-    loadAnalytics();
-  }
+    // View toggle
+    (function () {
+      var body = document.body;
+      var btns = document.querySelectorAll('.view-toggle__btn');
+      btns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var view = btn.dataset.viewSet;
+          body.dataset.view = view;
+          btns.forEach(function (b) {
+            var isActive = b === btn;
+            b.classList.toggle('is-active', isActive);
+            b.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+          });
+        });
+      });
+    })();
+  </script>
 
-  function declineCookies() {
-    localStorage.setItem('cookie-consent', 'declined');
-    banner.style.display = 'none';
-  }
-</script>
 </body>
+</html>
