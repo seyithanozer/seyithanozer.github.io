@@ -326,6 +326,10 @@ body.content-page h4 {
   text-decoration-color: var(--accent);
 }
 
+body.content-page {
+  width: calc(var(--col-mark) + var(--col-label) + var(--col-text));
+}
+
 body.content-page h1,
 body.content-page h2,
 body.content-page h3,
