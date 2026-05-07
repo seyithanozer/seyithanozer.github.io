@@ -1,9 +1,10 @@
 window.onload = () => {
-    const readBarFill = document.getElementById('read-bar-fill');
-    window.addEventListener('scroll', () => {
-      const elem = document.documentElement, body = document.body;
-      const scrollTop = elem.scrollTop  || body.scrollTop;
-      const scrollBottom = (elem.scrollHeight  || body.scrollHeight) - window.innerHeight;
-      readBarFill.style.width = `${100.0 * scrollTop / scrollBottom}%`;
-    });
-  };
+  const line = document.getElementById('reading-line');
+  if (!line) return;
+  window.addEventListener('scroll', () => {
+    const top = document.documentElement.scrollTop;
+    const bottom = document.documentElement.scrollHeight - window.innerHeight;
+    const pct = (100 * top / bottom).toFixed(1);
+    line.style.setProperty('--scroll', `${pct}%`);
+  });
+};
