@@ -111,10 +111,16 @@ hr {
 /* ---------- list/prose visibility swap ---------- */
 body[data-view="list"]  .cluster-body--prose { display: none; }
 body[data-view="prose"] .cluster-body--list  { display: none; }
-
-/* If a cluster has no prose authored yet, fall back to list even in prose mode */
 .cluster-body--prose:empty { display: none !important; }
-body[data-view="prose"] .cluster:has(.cluster-body--prose:empty) .cluster-body--list { display: block; }
+
+/* in prose mode: hide cluster headers explicitly marked, hide entire clusters with no prose AND hidden header */
+body[data-view="prose"] .cluster-head--hide-in-prose { display: none; }
+body[data-view="prose"] .cluster:has(.cluster-head--hide-in-prose):has(.cluster-body--prose:empty) { display: none; }
+
+body[data-view="prose"] #resources,
+body[data-view="prose"] #resources + hr {
+  display: none;
+}
 
 /* ---------- section labels (Research, Teaching, Resources, Contact) ---------- */
 .section-label {
@@ -133,7 +139,7 @@ body[data-view="prose"] .cluster:has(.cluster-body--prose:empty) .cluster-body--
 }
 .cluster:last-child { margin-bottom: 0; }
 
-.cluster-head {
+.cluster-head, .cluster-head--hide-in-prose {
   display: flex;
   align-items: baseline;
   gap: 0.2rem;
@@ -431,12 +437,9 @@ body {
   .sidenote {
     display: none;
   }
-}
-
-
-/* ---------- mobile ---------- */
-@media (max-width: 850px) {
-  body { width: 80vw; margin-left: 20px; }
+  body.content-page {
+  width: 90vw}
+  body { width: 80vw; margin-left: 20px;}
   .header-row { width: 80vw; }
   .container-main { grid-template-columns: 1fr; max-width: 80vw; }
   .col-1, .col-2 { position: static; }
