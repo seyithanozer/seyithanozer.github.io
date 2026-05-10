@@ -6,7 +6,6 @@
   --muted:     #5D5D5D;
   --rule:      black;
   --accent:    #f07167;
-  --accent-hover: #3D6B8C;
   --measure:   62ch;
   --col-mark:  30px;
   --col-label: 150px;
@@ -246,32 +245,13 @@ a:focus-visible {
 
 /* ---------- prose pages ---------- */
 body.content-page {
-  width: var(--col-text);
+  width: calc(var(--col-mark) + var(--col-label) + var(--col-text));
   font-size: 18px;
   line-height: 1.4;
 }
 
 body.content-page hr {
   width: 100%;
-}
-
-body.content-page h1 {
-  font-size: 1.75rem;
-  font-weight: 600;
-  line-height: 1.2;
-  text-wrap: balance;
-  max-width: 100%;
-  margin: 0 0 1.5rem;
-}
-
-body.content-page h2,
-body.content-page h3,
-body.content-page h4 {
-  font-size: 1.125rem;
-  font-weight: 600;
-  margin: 2rem 0 0.75rem;
-  max-width: 100%;
-  line-height: 1.3;
 }
 
 .ptext {
@@ -332,9 +312,7 @@ body.content-page h4 {
   text-decoration-color: var(--accent);
 }
 
-body.content-page {
-  width: calc(var(--col-mark) + var(--col-label) + var(--col-text));
-}
+
 
 body.content-page h1,
 body.content-page h2,
