@@ -7,7 +7,6 @@
   --rule:      black;
   --accent:    #f07167;
   --measure:   62ch;
-  --col-mark:  30px;
   --col-label: 150px;
   --col-text:  560px;
 }
@@ -30,7 +29,7 @@ html {
 body {
   background-color: var(--bg);
   margin: 30px 0 0 30px;
-  width: calc(var(--col-mark) + var(--col-label) + var(--col-text));
+  width: calc(var(--col-label) + var(--col-text));
   font-size: 18px;
   line-height: 1.4;
 }
@@ -40,7 +39,7 @@ em { font-style: italic; }
 /* ---------- layout ---------- */
 .container-main {
   display: grid;
-  grid-template-columns: var(--col-mark) var(--col-label) var(--col-text);
+  grid-template-columns: var(--col-label) var(--col-text);
   align-items: start;
 }
 
@@ -52,7 +51,7 @@ em { font-style: italic; }
 }
 
 .hr-main {
-  width: calc(var(--col-mark) + var(--col-label) + var(--col-text));
+  width: calc(var(--col-label) + var(--col-text));
 }
 
 hr {
@@ -69,10 +68,11 @@ hr {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  width: calc(var(--col-mark) + var(--col-label) + var(--col-text));
+  width: calc(var(--col-label) + var(--col-text));
   padding: 20px 0;
   background-color: var(--bg);
 }
+
 
 .main-header {
   margin: 0;
@@ -139,11 +139,13 @@ body[data-view="prose"] #resources + hr {
 .cluster:last-child { margin-bottom: 0; }
 
 .cluster-head, .cluster-head--hide-in-prose {
+  position: relative;
   display: flex;
   align-items: baseline;
   gap: 0.2rem;
   margin: 0.1rem 0 0.75rem;
 }
+
 .cluster-name {
   font-size: 1rem;
   font-weight: 600;
@@ -417,7 +419,7 @@ body {
   }
   body.content-page {
   width: 90vw}
-  body { width: 80vw; margin-left: 20px;}
+  body { width: 80vw; margin-left: 40px;}
   .header-row { width: 80vw; }
   .container-main { grid-template-columns: 1fr; max-width: 80vw; }
   .col-1, .col-2 { position: static; }
@@ -431,4 +433,15 @@ body {
     transition: none !important;
     animation: none !important;
   }
+}
+
+/* cluster dot, default */
+.cluster-head { display: flex; align-items: baseline; gap: 8px; }
+.cluster-dot {
+  position: absolute;
+  left: -15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--ink);
 }
