@@ -247,7 +247,7 @@ a:focus-visible {
 
 /* ---------- prose pages ---------- */
 body.content-page {
-  width: calc(var(--col-mark) + var(--col-label) + var(--col-text));
+  width: var(--col-text);
   font-size: 18px;
   line-height: 1.4;
 }
