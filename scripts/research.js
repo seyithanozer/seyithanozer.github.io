@@ -48,3 +48,31 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // resource
+
+// Mobile sidenotes — collect and append at end of page
+document.addEventListener('DOMContentLoaded', function () {
+  var notes = document.querySelectorAll('.sidenote');
+  if (!notes.length) return;
+
+  var aside = document.createElement('aside');
+  aside.className = 'mobile-sidenotes';
+
+  var heading = document.createElement('p');
+  heading.className = 'section-label';
+  heading.textContent = 'Notes';
+  aside.appendChild(heading);
+
+  var ol = document.createElement('ol');
+  ol.className = 'mobile-sidenotes__list';
+
+  notes.forEach(function (note) {
+    var li = document.createElement('li');
+    li.innerHTML = note.innerHTML;
+    ol.appendChild(li);
+  });
+
+  aside.appendChild(ol);
+
+  var main = document.querySelector('main');
+  if (main) main.appendChild(aside);
+});

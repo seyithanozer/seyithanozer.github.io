@@ -457,7 +457,6 @@ body.content-page .reading-line {
     display: block;
     margin-top: 2rem;
     padding-top: 1rem;
-    border-top: 3px solid var(--rule);
   }
   .mobile-sidenotes__list {
     padding-left: 1.25rem;
